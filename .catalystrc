@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "24836000000009001",
+      "name": "API-Application",
+      "domain": {
+        "id": "10092482181",
+        "name": "api-application-872720375.development"
+      },
+      "timezone": "America/Los_Angeles",
+      "env": [
+        {
+          "idx": 1,
+          "id": "872720375",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
