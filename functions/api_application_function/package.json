@@ -4,6 +4,14 @@
 	"main": "index.js",
 	"author": "zdc-hackathon1661@zohotest.com",
 	"dependencies": {
+		"axios": "^1.7.8",
+		"bcrypt": "^5.1.1",
+		"cors": "^2.8.5",
+		"crypto-js": "^4.2.0",
+		"csv-parser": "^3.0.0",
+		"express": "^4.21.1",
+		"express-fileupload": "^1.5.1",
+		"multer": "^1.4.5-lts.1",
 		"zcatalyst-sdk-node": "latest"
 	}
 }

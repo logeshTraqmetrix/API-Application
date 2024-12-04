@@ -5,6 +5,14 @@
 		"type": "advancedio",
 		"env_variables": {}
 	},
+	"development": {
+		"name": "api_application_function",
+		"stack": "node18",
+		"type": "advancedio",
+		"env_variables": {
+			"StocksTable":"24836000000013607"
+		}
+	},
 	"execution": {
 		"main": "index.js"
 	}

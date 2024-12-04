@@ -1,0 +1,5 @@
+react-app/node_modules
+functions/api_application_function/node_modules
+functions/Auth/node_modules
+
+/.build

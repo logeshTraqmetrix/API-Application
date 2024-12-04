@@ -1,17 +1,25 @@
-'use strict';
+const express = require('express')
+const app = express()
+const cors = require('cors');
+const path = require('path');
 
-module.exports = (req, res) => {
-	var url = req.url;
+app.use(express.json())
 
-	switch (url) {
-		case '/':
-			res.writeHead(200, { 'Content-Type': 'text/html' });
-			res.write('<h1>Hello from index.js<h1>');
-			break;
-		default:
-			res.writeHead(404);
-			res.write('You might find the page you are looking for at "/" path');
-			break;
-	}
-	res.end();
-};
+
+app.use(cors());
+
+app.use('/', require('./Routes/stockDataUploadRoute'));
+
+app.use('/',require('./Routes/createApiRoute'))
+
+app.use('/',require('./Routes/userRoute'))
+
+
+const fs = require('fs');
+const uploadDir = path.join(__dirname, 'uploads');
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir);
+}
+
+
+module.exports = app

@@ -1,7 +1,8 @@
 {
   "functions": {
     "targets": [
-      "api_application_function"
+      "api_application_function",
+      "auth"
     ],
     "ignore": [],
     "source": "functions"
