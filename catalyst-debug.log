@@ -1039,3 +1039,817 @@ Response Headers: {"server":"ZGS","date":"Wed, 04 Dec 2024 13:42:24 GMT","conten
 [debug] [2024-12-04T13:42:24.657Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
 
 [debug] [2024-12-04T13:42:24.659Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[debug] [2024-12-05T04:44:56.553Z] : 
+[debug] [2024-12-05T04:44:56.556Z] : ----------------------------------------------------------------------
+[debug] [2024-12-05T04:44:56.557Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\91950\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-12-05T04:44:56.557Z] : CLI Version:  1.17.6
+[debug] [2024-12-05T04:44:56.558Z] : Platform:     win32
+[debug] [2024-12-05T04:44:56.558Z] : Node Version: v20.14.0
+[debug] [2024-12-05T04:44:56.559Z] : Time:         Thu Dec 05 2024 10:14:56 GMT+0530 (India Standard Time)
+[debug] [2024-12-05T04:44:56.560Z] : ----------------------------------------------------------------------
+[debug] [2024-12-05T04:44:56.560Z] : 
+[debug] [2024-12-05T04:44:58.587Z] : > authorizing via signed-in user option
+[debug] [2024-12-05T04:44:58.588Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-12-05T04:44:58.615Z] : > refreshing access token <
+[debug] [2024-12-05T04:44:58.617Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-05T04:44:59.772Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 04:45:00 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/; Secure; HttpOnly","iamcsr=1742fc26-779b-4483-a65a-e21d012ecab1;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1742fc26-779b-4483-a65a-e21d012ecab1;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T04:44:59.832Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001 
+
+[debug] [2024-12-05T04:45:01.150Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 04:45:01 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=76d4fc00-be95-49a0-96f0-637cb82df0e2;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=76d4fc00-be95-49a0-96f0-637cb82df0e2;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T04:45:01.154Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/environment 
+
+[debug] [2024-12-05T04:45:01.551Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 04:45:01 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=a7dd8c3c-f5d4-4876-9c44-4106f0fe15c2;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a7dd8c3c-f5d4-4876-9c44-4106f0fe15c2;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T04:45:02.225Z] : Build folder already exists, starting cleanup
+[debug] [2024-12-05T04:45:02.484Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-12-05T04:45:02.948Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 04:45:03 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=8e48357a-2844-49e0-874e-3c0b34680919;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8e48357a-2844-49e0-874e-3c0b34680919;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T04:45:02.953Z] : unknown eol undefined hence skipping check
+[debug] [2024-12-05T04:45:02.953Z] : unknown eol undefined hence skipping check
+[info] [2024-12-05T04:45:13.180Z] : [react-plugin]: Starting the development server...
+
+[info] [2024-12-05T04:45:13.183Z] : 
+[info] [2024-12-05T04:45:13.184Z] : i Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2024-12-05T04:45:13.184Z] : 
+[info] [2024-12-05T04:45:16.164Z] : 
+[info] [2024-12-05T04:45:16.165Z] :  >>>>>>>>>>>>>> BasicIO <<<<<<<<<<<<<< 
+[info] [2024-12-05T04:45:16.165Z] : i auth: http://localhost:3000/server/auth/execute
+[info] [2024-12-05T04:45:16.166Z] : 
+[info] [2024-12-05T04:45:16.166Z] : 
+[info] [2024-12-05T04:45:16.167Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-12-05T04:45:16.167Z] : i api_application_function: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T04:45:16.168Z] : 
+[info] [2024-12-05T04:45:16.168Z] : 
+[info] [2024-12-05T04:45:16.169Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-12-05T04:45:16.169Z] : i client[react-app]: http://localhost:3000/app/
+[info] [2024-12-05T04:45:16.170Z] : 
+[info] [2024-12-05T04:45:17.137Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-05T04:45:17.137Z] : [react-plugin]: 
+[info] [2024-12-05T04:45:17.138Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-05T04:45:17.138Z] : [react-plugin]: 
+[info] [2024-12-05T04:45:17.138Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-05T04:45:17.139Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-05T04:45:17.139Z] : [react-plugin]: 
+[info] [2024-12-05T04:45:17.140Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-05T04:45:17.140Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-05T04:45:17.141Z] : [react-plugin]: 
+[info] [2024-12-05T04:45:17.323Z] : [react-plugin]: Compiling...
+[info] [2024-12-05T04:45:17.642Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-05T04:45:17.643Z] : [react-plugin]: 
+[info] [2024-12-05T04:45:17.643Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-05T04:45:17.643Z] : [react-plugin]: 
+[info] [2024-12-05T04:45:17.644Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-05T04:45:17.644Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-05T04:45:17.644Z] : [react-plugin]: 
+[info] [2024-12-05T04:45:17.645Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-05T04:45:17.645Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-05T04:45:17.646Z] : [react-plugin]: 
+[info] [2024-12-05T04:53:11.235Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T04:53:16.426Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T04:53:16.426Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T04:54:30.143Z] : [react-plugin]: Compiling...
+[info] [2024-12-05T04:54:34.998Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-05T04:54:34.999Z] : [react-plugin]: 
+[info] [2024-12-05T04:54:34.999Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-05T04:54:35.000Z] : [react-plugin]: 
+[info] [2024-12-05T04:54:35.000Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-05T04:54:35.000Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-05T04:54:35.001Z] : [react-plugin]: 
+[info] [2024-12-05T04:54:35.001Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-05T04:54:35.001Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-05T04:54:35.002Z] : [react-plugin]: 
+[info] [2024-12-05T04:55:25.005Z] : [react-plugin]: Compiling...
+[info] [2024-12-05T04:55:25.504Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-05T04:55:25.504Z] : [react-plugin]: 
+[info] [2024-12-05T04:55:25.505Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-05T04:55:25.506Z] : [react-plugin]: 
+[info] [2024-12-05T04:55:25.506Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-05T04:55:25.507Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-05T04:55:25.508Z] : [react-plugin]: 
+[info] [2024-12-05T04:55:25.510Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-05T04:55:25.512Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-05T04:55:25.512Z] : [react-plugin]: 
+[info] [2024-12-05T04:55:47.515Z] : [react-plugin]: Compiling...
+[info] [2024-12-05T04:55:47.877Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-05T04:55:47.877Z] : [react-plugin]: 
+[info] [2024-12-05T04:55:47.877Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-05T04:55:47.877Z] : [react-plugin]: 
+[info] [2024-12-05T04:55:47.878Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-05T04:55:47.878Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-05T04:55:47.878Z] : [react-plugin]: 
+[info] [2024-12-05T04:55:47.879Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-05T04:55:47.879Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-05T04:55:47.879Z] : [react-plugin]: 
+[info] [2024-12-05T04:56:09.119Z] : [react-plugin]: Compiling...
+[info] [2024-12-05T04:56:09.495Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-05T04:56:09.496Z] : [react-plugin]: 
+[info] [2024-12-05T04:56:09.497Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-05T04:56:09.498Z] : [react-plugin]: 
+[info] [2024-12-05T04:56:09.499Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-05T04:56:09.499Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-05T04:56:09.499Z] : [react-plugin]: 
+[info] [2024-12-05T04:56:09.500Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-05T04:56:09.500Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-05T04:56:09.500Z] : [react-plugin]: 
+[info] [2024-12-05T04:59:17.815Z] : 
+addDir of Config in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T04:59:23.209Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T04:59:23.210Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T04:59:36.910Z] : 
+add of Config\planValues.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T04:59:41.943Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T04:59:41.944Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T05:05:19.195Z] : 
+change of Config\planValues.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T05:05:24.201Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T05:05:24.201Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T05:09:11.667Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T05:09:16.845Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T05:09:16.846Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T05:09:50.763Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T05:09:55.623Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T05:09:55.624Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T05:10:38.326Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T05:10:43.424Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T05:10:43.425Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T05:18:31.368Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T05:18:36.584Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T05:18:36.585Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T05:28:20.342Z] : 
+addDir of Static in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T05:28:25.250Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T05:28:25.251Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T05:35:51.523Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T05:35:56.275Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T05:35:56.276Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T05:53:02.440Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T05:53:08.499Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T05:53:08.500Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T05:53:14.882Z] : > refreshing access token <
+[debug] [2024-12-05T05:53:14.886Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-05T05:53:16.017Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 05:53:16 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/; Secure; HttpOnly","iamcsr=16c60bd3-bc8d-4a2f-a734-e8eace6a46f7;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=16c60bd3-bc8d-4a2f-a734-e8eace6a46f7;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-05T05:54:58.060Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T05:55:03.129Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T05:55:03.130Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T06:01:51.603Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T06:01:56.659Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T06:01:56.659Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T06:04:40.758Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T06:04:45.774Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T06:04:45.775Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T06:17:55.081Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T06:17:59.946Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T06:17:59.947Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T06:18:50.367Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T06:18:55.516Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T06:18:55.516Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T06:21:26.178Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T06:21:31.177Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T06:21:31.178Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T06:38:43.167Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T06:38:46.346Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T06:38:46.347Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T06:54:50.763Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T06:54:54.454Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T06:54:54.454Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T06:55:36.738Z] : > refreshing access token <
+[debug] [2024-12-05T06:55:36.739Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-05T06:55:37.693Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 06:55:37 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=a7f15cb1555106de5ac96d088b72e7c8; Path=/; Secure; HttpOnly","iamcsr=a4d35221-c627-4ef5-bd50-7c67d494127a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a4d35221-c627-4ef5-bd50-7c67d494127a;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-05T07:18:53.745Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T07:18:57.433Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T07:18:57.434Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T07:30:43.716Z] : 
+change of Controllers\createApiController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T07:30:46.783Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T07:30:46.784Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T07:54:36.623Z] : 
+add of Controllers\dataController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T07:54:41.843Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T07:54:41.844Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T07:55:03.058Z] : 
+add of Routes\dataRoute.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T07:55:08.903Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T07:55:08.904Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T07:56:13.485Z] : 
+add of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T07:56:18.729Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T07:56:18.730Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:05:04.474Z] : 
+change of Routes\dataRoute.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:05:09.629Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:05:09.630Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:07:56.156Z] : 
+change of Controllers\dataController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:08:01.301Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:08:01.302Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:09:03.324Z] : 
+change of index.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:09:08.516Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:09:08.517Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T08:10:34.201Z] : > refreshing access token <
+[debug] [2024-12-05T08:10:34.202Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-05T08:10:35.104Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 08:10:35 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/; Secure; HttpOnly","iamcsr=f8e31545-2224-42dc-9161-0055c21f4f04;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f8e31545-2224-42dc-9161-0055c21f4f04;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-05T08:12:51.689Z] : 
+add of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:12:56.929Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:12:56.930Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:13:46.865Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:13:52.019Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:13:52.019Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:15:08.787Z] : 
+change of Routes\dataRoute.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:15:13.965Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:15:13.965Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:16:44.727Z] : 
+change of Routes\dataRoute.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:16:49.729Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:16:49.730Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:17:15.314Z] : 
+add of Controllers\pincodeController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:17:20.443Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:17:20.444Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:18:58.817Z] : 
+change of Controllers\pincodeController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:19:03.814Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:19:03.814Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:19:48.749Z] : 
+change of Routes\dataRoute.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:19:53.669Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:19:53.670Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:27:14.511Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:27:19.587Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:27:19.588Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:27:48.148Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:27:53.339Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:27:53.340Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:29:54.689Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:29:59.712Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:29:59.713Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:32:43.216Z] : 
+change of Routes\dataRoute.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:32:48.210Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:32:48.211Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:35:06.398Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:35:11.271Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:35:11.271Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T08:35:48.151Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T08:35:53.082Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T08:35:53.083Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T09:02:28.387Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T09:02:33.999Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T09:02:34.000Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T09:10:34.779Z] : > refreshing access token <
+[debug] [2024-12-05T09:10:34.781Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-05T09:10:35.722Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 09:10:35 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/; Secure; HttpOnly","iamcsr=a0d04239-aae7-40a2-a9d7-2a83a5761c31;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a0d04239-aae7-40a2-a9d7-2a83a5761c31;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-05T10:11:54.578Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T10:12:00.616Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T10:12:00.616Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T10:12:04.916Z] : > refreshing access token <
+[debug] [2024-12-05T10:12:04.918Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-05T10:12:05.887Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 10:12:07 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/; Secure; HttpOnly","iamcsr=50b6fbd1-5f12-43fa-9083-9314265cc490;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=50b6fbd1-5f12-43fa-9083-9314265cc490;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-05T10:27:53.707Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T10:27:58.551Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T10:27:58.552Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T10:31:45.771Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T10:31:50.672Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T10:31:50.673Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T10:38:24.663Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T10:38:29.515Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T10:38:29.516Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T10:38:51.420Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T10:38:56.303Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T10:38:56.304Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T10:56:01.038Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T10:56:06.120Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T10:56:06.121Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T10:59:46.392Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T10:59:51.470Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T10:59:51.471Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T11:03:10.249Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:03:15.457Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:03:15.458Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T11:03:32.868Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:03:37.737Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:03:37.737Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T11:09:13.648Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:09:18.768Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:09:18.769Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T11:13:15.156Z] : 
+add of Config\stockTableColumns.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:13:21.147Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:13:21.148Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T11:15:49.637Z] : > refreshing access token <
+[debug] [2024-12-05T11:15:49.638Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-05T11:15:50.540Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 11:15:51 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/; Secure; HttpOnly","iamcsr=ce371ea0-a89b-4205-a403-18d86af6e070;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ce371ea0-a89b-4205-a403-18d86af6e070;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-05T11:18:50.025Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:18:55.221Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:18:55.221Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T11:19:10.459Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:19:15.444Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:19:15.445Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T11:20:44.580Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:20:49.453Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:20:49.454Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T11:21:03.744Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:21:08.842Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:21:08.843Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T11:21:41.317Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:21:46.356Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:21:46.357Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T11:22:23.429Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:22:28.100Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:22:28.101Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T11:23:49.319Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:23:54.364Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:23:54.365Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T11:26:34.285Z] : 
+change of Static\queryGenerator.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:26:39.259Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:26:39.260Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T11:27:03.035Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:27:07.772Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:27:07.773Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T11:50:19.719Z] : 
+change of Config\stockTableColumns.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T11:50:22.818Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T11:50:22.819Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T12:00:28.936Z] : 
+add of Middleware\apiMiddleware.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:00:32.398Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:00:32.399Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T12:12:32.584Z] : 
+change of Middleware\apiMiddleware.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:12:35.740Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:12:35.740Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T12:13:52.587Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:13:56.077Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:13:56.078Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T12:14:24.621Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:14:27.736Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:14:27.737Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T12:16:20.482Z] : > refreshing access token <
+[debug] [2024-12-05T12:16:20.484Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-05T12:16:21.393Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:16:22 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=a7f15cb1555106de5ac96d088b72e7c8; Path=/; Secure; HttpOnly","iamcsr=7e7fff9c-826f-4475-b87d-561e1399b6cc;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=7e7fff9c-826f-4475-b87d-561e1399b6cc;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:16:21.401Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:16:22.306Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:16:23 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=5eb1bbf4-6438-4d3d-8602-ebd4e676c355;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5eb1bbf4-6438-4d3d-8602-ebd4e676c355;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=02CE7811FC387CD6009161B3AEC2855A; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:16:22.307Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[info] [2024-12-05T12:19:43.144Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:19:46.155Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:19:46.156Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T12:19:49.799Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:19:51.040Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:19:52 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=04b78847-e423-4552-981c-61e427e81ed9;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=04b78847-e423-4552-981c-61e427e81ed9;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=B353E41AC4019F38D43E5DCA026B4879; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:19:51.040Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:19:57.593Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:19:58.533Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:19:59 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=b4972498-19e4-47db-ad40-0774766f5321;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b4972498-19e4-47db-ad40-0774766f5321;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=5B1A3FFA8968039F99A8EC7DD5AC34D4; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:19:58.533Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:20:02.134Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:20:02.457Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:20:03 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=d5be501f-5b1c-4a5e-bcf1-889ffadf4530;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d5be501f-5b1c-4a5e-bcf1-889ffadf4530;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=AE4E55B58D6D6398ACF4B018800C9937; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:20:02.457Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:20:26.081Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:20:27.004Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:20:28 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=95971fdd-c869-49d5-9976-c51791b380bd;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=95971fdd-c869-49d5-9976-c51791b380bd;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=334B04EAD20A074E0D96AFF4FEF36CBC; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:20:27.004Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[info] [2024-12-05T12:26:26.517Z] : 
+change of Middleware\apiMiddleware.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:26:29.701Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:26:29.702Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T12:26:33.549Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:26:36.608Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:26:36.608Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T12:26:43.696Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:26:44.742Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:26:45 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=6aad535f-d9ab-439a-8c3d-1f2d4f095411;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6aad535f-d9ab-439a-8c3d-1f2d4f095411;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=1D0F3AF0D80E215A1A3E787F631CA1C9; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:26:44.742Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[info] [2024-12-05T12:30:22.642Z] : 
+change of Middleware\apiMiddleware.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:30:25.826Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:30:25.826Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T12:30:31.949Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:30:32.930Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:30:34 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=acf7514a-00b8-44f8-ab27-0aec23ce3158;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=acf7514a-00b8-44f8-ab27-0aec23ce3158;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=82E1588BFF2B1E3E63A98EF1D919FBA6; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:30:32.930Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:30:40.353Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:30:41.232Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:30:42 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=3daa90cf-8420-4bb0-acf4-f6eac76a67da;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3daa90cf-8420-4bb0-acf4-f6eac76a67da;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=6E99BCBB5E680EC7FA5C3D242973A5CC; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:30:41.232Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:31:06.712Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:31:07.636Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:31:08 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=3c9c0c07-509c-4854-9f7d-630d9b72d522;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3c9c0c07-509c-4854-9f7d-630d9b72d522;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=7A02523A1BA250B1201EFB56528AEE41; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:31:07.637Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:31:25.106Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:31:26.001Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:31:27 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=8d1614c3-e509-411b-9657-3a6e619a8360;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8d1614c3-e509-411b-9657-3a6e619a8360;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=0DF01C148F554C9402BA0B7651983B74; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:31:26.002Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[info] [2024-12-05T12:32:56.995Z] : Shutting down server
+[info] [2024-12-05T12:32:57.251Z] : 
+[info] [2024-12-05T12:32:57.252Z] : √ Shutdown complete
+[debug] [2024-12-05T12:32:57.252Z] : NO ERRORS REGISTERED
+[debug] [2024-12-05T12:32:57.253Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-12-05T12:32:57.253Z] : TOTAL DURATION OF COMMAND EXEC : 28078701
+[debug] [2024-12-05T12:32:57.299Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-12-05T12:33:01.063Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:33:02 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","JSESSIONID=89B69A87BFFD407BAFBE367B3C643CA5; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:33:01.064Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2024-12-05T12:33:01.071Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[debug] [2024-12-05T12:33:10.550Z] : 
+[debug] [2024-12-05T12:33:10.552Z] : ----------------------------------------------------------------------
+[debug] [2024-12-05T12:33:10.552Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\91950\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-12-05T12:33:10.552Z] : CLI Version:  1.17.6
+[debug] [2024-12-05T12:33:10.552Z] : Platform:     win32
+[debug] [2024-12-05T12:33:10.553Z] : Node Version: v20.14.0
+[debug] [2024-12-05T12:33:10.553Z] : Time:         Thu Dec 05 2024 18:03:10 GMT+0530 (India Standard Time)
+[debug] [2024-12-05T12:33:10.553Z] : ----------------------------------------------------------------------
+[debug] [2024-12-05T12:33:10.553Z] : 
+[debug] [2024-12-05T12:33:12.232Z] : > authorizing via signed-in user option
+[debug] [2024-12-05T12:33:12.233Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-12-05T12:33:12.248Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001 
+
+[debug] [2024-12-05T12:33:13.162Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:33:14 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=c6774c40-4f22-450c-b7d4-59427f8e5a49;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c6774c40-4f22-450c-b7d4-59427f8e5a49;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:33:13.166Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/environment 
+
+[debug] [2024-12-05T12:33:13.467Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:33:14 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=7212bb93-c567-4f75-a35d-0ebfab8dcd9a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=7212bb93-c567-4f75-a35d-0ebfab8dcd9a;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:33:13.898Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-12-05T12:33:14.215Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:33:15 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=4a98c5e1-d6e8-46c4-a541-2d1a36d02b05;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4a98c5e1-d6e8-46c4-a541-2d1a36d02b05;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:33:14.218Z] : unknown eol undefined hence skipping check
+[debug] [2024-12-05T12:33:14.219Z] : unknown eol undefined hence skipping check
+[info] [2024-12-05T12:33:21.493Z] : [react-plugin]: Starting the development server...
+
+[info] [2024-12-05T12:33:21.495Z] : 
+[info] [2024-12-05T12:33:21.496Z] : i Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2024-12-05T12:33:21.496Z] : 
+[info] [2024-12-05T12:33:24.023Z] : 
+[info] [2024-12-05T12:33:24.024Z] :  >>>>>>>>>>>>>> BasicIO <<<<<<<<<<<<<< 
+[info] [2024-12-05T12:33:24.024Z] : i auth: http://localhost:3000/server/auth/execute
+[info] [2024-12-05T12:33:24.024Z] : 
+[info] [2024-12-05T12:33:24.025Z] : 
+[info] [2024-12-05T12:33:24.025Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-12-05T12:33:24.026Z] : i api_application_function: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T12:33:24.026Z] : 
+[info] [2024-12-05T12:33:24.027Z] : 
+[info] [2024-12-05T12:33:24.027Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-12-05T12:33:24.027Z] : i client[react-app]: http://localhost:3000/app/
+[info] [2024-12-05T12:33:24.028Z] : 
+[info] [2024-12-05T12:33:24.622Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-05T12:33:24.622Z] : [react-plugin]: 
+[info] [2024-12-05T12:33:24.622Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-05T12:33:24.622Z] : [react-plugin]: 
+[info] [2024-12-05T12:33:24.623Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-05T12:33:24.623Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-05T12:33:24.623Z] : [react-plugin]: 
+[info] [2024-12-05T12:33:24.623Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-05T12:33:24.623Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-05T12:33:24.624Z] : [react-plugin]: 
+[debug] [2024-12-05T12:33:36.206Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:33:37.172Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:33:38 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=4d16fafb-5afa-4a69-a06b-e49917ee3b16;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4d16fafb-5afa-4a69-a06b-e49917ee3b16;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=DA56E4CEF2E4D781EC2EC6CB4FAD1635; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:33:37.172Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[info] [2024-12-05T12:34:23.444Z] : 
+change of Middleware\apiMiddleware.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:34:26.614Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:34:26.614Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T12:34:34.002Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:34:34.943Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:34:36 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=b6179328-5c09-4ed3-b0fa-2374080007a8;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b6179328-5c09-4ed3-b0fa-2374080007a8;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=ADE498C783B8A25035FA1DBA2253F158; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:34:34.943Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[info] [2024-12-05T12:36:01.164Z] : 
+change of Middleware\apiMiddleware.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:36:04.240Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:36:04.241Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T12:36:08.179Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:36:09.091Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:36:10 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=fac35c6d-63e7-46d0-bd36-111d5de2f19e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fac35c6d-63e7-46d0-bd36-111d5de2f19e;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=C50562B743163867AC27FFBA8FCC68AC; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:36:09.091Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:36:20.674Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:36:21.601Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:36:22 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=24141bab-34f8-472d-bbf3-11d49a86a0cd;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=24141bab-34f8-472d-bbf3-11d49a86a0cd;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=ABD34F41A5345D6C6C5CF4BE9B8B8948; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:36:21.602Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:36:24.358Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:36:24.682Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:36:25 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=54b5a3db-e4ea-43ab-8839-bcc917f9129e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=54b5a3db-e4ea-43ab-8839-bcc917f9129e;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=3E5C8D58DE9A845A6E74AEF6ECF12229; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:36:24.683Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:36:42.301Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:36:43.357Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:36:44 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=f8f52e6d-0557-447f-8cc3-e12693bef88c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f8f52e6d-0557-447f-8cc3-e12693bef88c;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=ADF1BD666F5DA14870B4CCCF40EEF847; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:36:43.359Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[info] [2024-12-05T12:38:12.225Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:38:15.288Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:38:15.289Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T12:38:22.880Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:38:23.996Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:38:25 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=89bfa007-d7c4-42f7-aac6-91dcab121f87;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=89bfa007-d7c4-42f7-aac6-91dcab121f87;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=5F4D1D0764126DF4D4E95332CFA75DE1; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:38:23.997Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:38:36.936Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:38:37.843Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:38:38 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=778eb911-aeec-4a95-9f98-94a2c24983cb;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=778eb911-aeec-4a95-9f98-94a2c24983cb;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=3A6C1ECA03A39731B0F533AD48291E2F; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:38:37.844Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:38:39.805Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:38:40.113Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:38:41 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=7fd58a10-cb11-43c7-a38c-41f113bbabef;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=7fd58a10-cb11-43c7-a38c-41f113bbabef;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=771FA952E4F78D775C02CDD61905CC96; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:38:40.114Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[info] [2024-12-05T12:39:17.890Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:39:20.963Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:39:20.964Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T12:39:29.743Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:39:30.575Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:39:31 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=dac44e23-6e0f-4de1-a753-16228fbf467b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=dac44e23-6e0f-4de1-a753-16228fbf467b;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=CBD6D7650E106FCB5061475BE002A0F6; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:39:30.575Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:39:53.816Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:39:54.734Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:39:55 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=b4c538da-e9fe-4810-bdce-faf575fd98d7;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b4c538da-e9fe-4810-bdce-faf575fd98d7;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=5801740005A359A0378FA313B108C302; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:39:54.734Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[info] [2024-12-05T12:40:13.675Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:40:16.716Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:40:16.716Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T12:40:27.267Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:40:28.255Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:40:29 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=9699c57a-c160-40a8-82f5-556a56cd8c1d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=9699c57a-c160-40a8-82f5-556a56cd8c1d;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=3DCC55D0056FC79F353B9B7FF9D194DC; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:40:28.255Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:40:38.581Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:40:39.495Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:40:40 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=fee1abf3-18d9-4695-a0d6-b8c05d4138a4;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fee1abf3-18d9-4695-a0d6-b8c05d4138a4;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=3CC4E2190906ABD878EC0EF089353BCE; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:40:39.495Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[info] [2024-12-05T12:44:23.283Z] : 
+change of Controllers\stockController.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:44:26.694Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:44:26.694Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[info] [2024-12-05T12:44:30.371Z] : 
+change of Middleware\apiMiddleware.js in api_application_function detected. Preparing your function, please wait...
+[info] [2024-12-05T12:44:33.346Z] : i AdvancedIO[api_application_function]: ready!
+[info] [2024-12-05T12:44:33.346Z] : i AdvancedIO[api_application_function]: http://localhost:3000/server/api_application_function/
+[debug] [2024-12-05T12:44:50.341Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:44:51.395Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:44:52 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=79c20238-5a75-444d-a9d7-1895ec35243d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=79c20238-5a75-444d-a9d7-1895ec35243d;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=DBB0F4959B6118E84277704159BBD506; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:44:51.396Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:44:58.105Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:44:58.916Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:45:00 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=7579e77a-48a2-4a6c-96ea-a6b439d9a8ae;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=7579e77a-48a2-4a6c-96ea-a6b439d9a8ae;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=D2A58227DA587219FEF35C6FEF029792; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:44:58.917Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:45:00.629Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:45:00.901Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:45:02 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=ea34a5b1-4a21-44f8-a6fc-a1a3d3d27daa;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ea34a5b1-4a21-44f8-a6fc-a1a3d3d27daa;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=4E42B400692AB86C73F31DDD5447471D; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:45:00.902Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:45:02.615Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:45:02.912Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:45:04 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=fbaf1a1d-a50c-4cdd-b6d7-2802f305e4f0;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fbaf1a1d-a50c-4cdd-b6d7-2802f305e4f0;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=406604D65B0A69107293C0E04D2845B8; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:45:02.912Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:45:25.480Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:45:26.426Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:45:27 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=6a2eb808-e980-4cac-87e2-0ed570d11aef;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6a2eb808-e980-4cac-87e2-0ed570d11aef;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=A2591363063382A7AA566DF323411EBB; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:45:26.427Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
+
+[debug] [2024-12-05T12:45:31.938Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:45:32.839Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:45:33 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=a34e99f8-e043-41b6-afbb-4a09c4bd6ae2;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a34e99f8-e043-41b6-afbb-4a09c4bd6ae2;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=B6C59568DC59B81A641D4D87D6CBCACB; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:45:32.840Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
+
+[debug] [2024-12-05T12:45:48.329Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:45:49.145Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:45:50 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=791a539e-85f9-4fed-ad0c-02958ee2aea5;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=791a539e-85f9-4fed-ad0c-02958ee2aea5;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=8493CB81E7CA50C9F7B154CD2C11C658; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:45:49.146Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:46:20.458Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:46:21.498Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:46:22 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=472e4bd2-f470-4f34-b8e8-0edce0ab8790;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=472e4bd2-f470-4f34-b8e8-0edce0ab8790;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=B1F9F6EBFFB9AF81C9CD1A96F02F4381; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:46:21.499Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:47:04.113Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:47:04.980Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:47:06 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=a86a5c52-baaf-45a4-8081-09c951b6721b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a86a5c52-baaf-45a4-8081-09c951b6721b;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=30C0F059F900B034FC71582C50DB2CAB; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:47:04.981Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:47:07.976Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:47:08.274Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:47:09 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=da1dacae-3504-48cb-9be3-0289e8c13618;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=da1dacae-3504-48cb-9be3-0289e8c13618;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=4C3B544FEB2E371335E126362D6214CD; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:47:08.274Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:47:10.734Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:47:11.020Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:47:12 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=f7cf349e-330a-4e12-abe8-ac4b03a0e1d3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f7cf349e-330a-4e12-abe8-ac4b03a0e1d3;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=A65569FB7B02DEFB78D841068AF851F9; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:47:11.021Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2024-12-05T12:47:13.385Z] : >>>> HTTP REQUEST : GET https://api-application-872720375.development.catalystserverless.com/baas/v1/project/24836000000009001/project-user/current 
+
+[debug] [2024-12-05T12:47:13.680Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 12:47:14 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=d93037ce-b1af-4e24-b9ac-15ca3128ae79;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d93037ce-b1af-4e24-b9ac-15ca3128ae79;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=EB0306038E78E02425DF43C66F2A1E34; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T12:47:13.680Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[info] [2024-12-05T13:41:43.747Z] : Shutting down server
+[info] [2024-12-05T13:41:44.164Z] : 
+[info] [2024-12-05T13:41:44.166Z] : √ Shutdown complete
+[debug] [2024-12-05T13:41:44.168Z] : NO ERRORS REGISTERED
+[debug] [2024-12-05T13:41:44.169Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-12-05T13:41:44.169Z] : TOTAL DURATION OF COMMAND EXEC : 4111955
+[debug] [2024-12-05T13:41:44.258Z] : > refreshing access token <
+[debug] [2024-12-05T13:41:44.260Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-05T13:41:45.603Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 13:41:46 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/; Secure; HttpOnly","iamcsr=8bb04386-e522-4282-ac76-4f633d3d3a2c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8bb04386-e522-4282-ac76-4f633d3d3a2c;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T13:41:45.669Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-12-05T13:41:49.740Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Thu, 05 Dec 2024 13:41:50 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","JSESSIONID=51D6550FE64807D17C3B95DCFCF4E45B; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-05T13:41:49.740Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2024-12-05T13:41:49.742Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range

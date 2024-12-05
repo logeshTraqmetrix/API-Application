@@ -14,6 +14,9 @@ app.use('/',require('./Routes/createApiRoute'))
 
 app.use('/',require('./Routes/userRoute'))
 
+app.use('/',require('./Routes/dataRoute'))
+
+
 
 const fs = require('fs');
 const uploadDir = path.join(__dirname, 'uploads');

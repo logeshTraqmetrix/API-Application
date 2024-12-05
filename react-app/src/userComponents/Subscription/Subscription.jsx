@@ -16,9 +16,10 @@ const Subscription = () => {
     },[])
 
     const applyPlan = (planValue)=>{
+        
         axios.post('/server/api_application_function/userApi',{email,planValue})
             .then((response)=>{
-                console.log('response from creating api payment',response)
+                console.log('response from creating api payment',response.data)
             }).catch((error)=>{
                 console.log('error in api creation or payment',error)
             })
@@ -35,7 +36,7 @@ const Subscription = () => {
         </div>
         <div>
             <h2>10 rupees</h2>
-            <button onClick={()=>applyPlan(0)}>Apply</button>
+            <button onClick={()=>applyPlan(10)}>Apply</button>
         </div>
     </div>
   )

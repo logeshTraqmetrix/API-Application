@@ -1,0 +1,1 @@
+const stockTableColumns = ["indexName", "openIndexValue", "pointsChange", ]
