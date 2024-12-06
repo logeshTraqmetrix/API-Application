@@ -410,6 +410,77 @@ module.exports = QueryGenerator;
 
 
 
+// const QueryGenerator = (tableName, queryParams) => {
+//     const operatorMap = {
+//         'greaterThan': '>',
+//         'lessThan': '<',
+//         'greaterThanEqual': '>=',
+//         'lessThanEqual': '<=',
+//         'notEquals': '!=',
+//         'equals': '='
+//     };
+
+//     let whereClauses = [];
+//     let values = [];
+//     let page = 1; 
+//     let limit = 10;
+
+//     if (queryParams.page) {
+//         page = parseInt(queryParams.page, 10);
+//         delete queryParams.page;
+//     }
+//     if (queryParams.limit) {
+//         limit = parseInt(queryParams.limit, 10);
+//         delete queryParams.limit;
+//     }
+
+//     for (let [key, value] of Object.entries(queryParams)) {
+//         if (key.includes('.')) {
+//             const [field, operator] = key.split('.');
+
+//             if (operatorMap[operator]) {
+//                 if (value.includes('|')) {
+//                     const valuesList = value.split('|');
+//                     valuesList.forEach(val => {
+//                         whereClauses.push(`${field} ${operatorMap[operator]} ?`);
+//                         values.push(val);
+//                     });
+//                 } else {
+//                     whereClauses.push(`${field} ${operatorMap[operator]} ?`);
+//                     values.push(value);
+//                 }
+//             } else if (operator === 'isNull') {
+//                 whereClauses.push(`${field} IS NULL`);
+//             } else if (operator === 'isNotNull') {
+//                 whereClauses.push(`${field} IS NOT NULL`);
+//             } else if (operator === 'startsWith') {
+//                 whereClauses.push(`${field} LIKE ?`);
+//                 values.push(`${value}%`);
+//             } else if (operator === 'endsWith') {
+//                 whereClauses.push(`${field} LIKE ?`);
+//                 values.push(`%${value}`);
+//             } else if (operator === 'contains') {
+//                 whereClauses.push(`${field} LIKE ?`);
+//                 values.push(`%${value}%`);
+//             } else {
+//                 throw new Error(`Unsupported operator: ${operator}`);
+//             }
+//         } else {
+//             whereClauses.push(`${key} = ?`);
+//             values.push(value);
+//         }
+//     }
+
+//     const whereSQL = whereClauses.length > 0 ? `WHERE ${whereClauses.join(' AND ')}` : '';
+//     const offset = (page - 1) * limit;
+//     const paginationSQL = `LIMIT ${limit} OFFSET ${offset}`;
+
+//     const sqlQuery = `SELECT * FROM ${tableName} ${whereSQL} ${paginationSQL};`;
+
+//     return { sqlQuery, values };
+// };
+
+// module.exports = QueryGenerator;
 
 
 
