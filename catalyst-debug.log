@@ -3134,3 +3134,600 @@ Response Headers: {"server":"ZGS","date":"Fri, 06 Dec 2024 13:16:00 GMT","conten
 [debug] [2024-12-06T13:16:00.501Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
 
 [debug] [2024-12-06T13:16:00.509Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[debug] [2024-12-07T04:51:03.192Z] : 
+[debug] [2024-12-07T04:51:03.195Z] : ----------------------------------------------------------------------
+[debug] [2024-12-07T04:51:03.196Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\91950\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-12-07T04:51:03.196Z] : CLI Version:  1.17.6
+[debug] [2024-12-07T04:51:03.197Z] : Platform:     win32
+[debug] [2024-12-07T04:51:03.197Z] : Node Version: v20.14.0
+[debug] [2024-12-07T04:51:03.198Z] : Time:         Sat Dec 07 2024 10:21:03 GMT+0530 (India Standard Time)
+[debug] [2024-12-07T04:51:03.198Z] : ----------------------------------------------------------------------
+[debug] [2024-12-07T04:51:03.198Z] : 
+[debug] [2024-12-07T04:51:05.469Z] : > authorizing via signed-in user option
+[debug] [2024-12-07T04:51:05.470Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-12-07T04:51:05.494Z] : > refreshing access token <
+[debug] [2024-12-07T04:51:05.496Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-07T04:51:06.608Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 04:51:06 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=a7f15cb1555106de5ac96d088b72e7c8; Path=/; Secure; HttpOnly","iamcsr=6f5a716b-ad29-465b-98fb-8dbb1c785d69;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6f5a716b-ad29-465b-98fb-8dbb1c785d69;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T04:51:06.660Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001 
+
+[debug] [2024-12-07T04:51:07.627Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 04:51:07 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=7fc527e9-c030-458f-a74d-d9d3a79a2794;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=7fc527e9-c030-458f-a74d-d9d3a79a2794;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T04:51:07.631Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/environment 
+
+[debug] [2024-12-07T04:51:07.938Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 04:51:07 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=390977ae-a38c-48b6-824f-9b7634f5e5e3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=390977ae-a38c-48b6-824f-9b7634f5e5e3;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T04:51:08.627Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-12-07T04:51:08.980Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 04:51:08 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=29c2747b-52cf-4d2d-89b4-58e7a1a619bb;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=29c2747b-52cf-4d2d-89b4-58e7a1a619bb;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T04:51:08.984Z] : unknown eol undefined hence skipping check
+[debug] [2024-12-07T04:51:08.985Z] : unknown eol undefined hence skipping check
+[info] [2024-12-07T04:51:19.372Z] : [react-plugin]: Starting the development server...
+
+[info] [2024-12-07T04:51:19.377Z] : 
+[info] [2024-12-07T04:51:19.378Z] : i Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2024-12-07T04:51:19.378Z] : 
+[info] [2024-12-07T04:51:22.553Z] : 
+[info] [2024-12-07T04:51:22.554Z] :  >>>>>>>>>>>>>> BasicIO <<<<<<<<<<<<<< 
+[info] [2024-12-07T04:51:22.555Z] : i auth: http://localhost:3000/server/auth/execute
+[info] [2024-12-07T04:51:22.555Z] : 
+[info] [2024-12-07T04:51:22.556Z] : 
+[info] [2024-12-07T04:51:22.556Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-12-07T04:51:22.557Z] : i api_application_function: http://localhost:3000/server/api_application_function/
+[info] [2024-12-07T04:51:22.557Z] : 
+[info] [2024-12-07T04:51:22.558Z] : 
+[info] [2024-12-07T04:51:22.558Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-12-07T04:51:22.559Z] : i client[react-app]: http://localhost:3000/app/
+[info] [2024-12-07T04:51:22.559Z] : 
+[info] [2024-12-07T04:51:29.989Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-07T04:51:29.990Z] : [react-plugin]: Module not found: Error: Can't resolve '@toolpad/core/AppProvider' in 'C:\catalyst projects\API Application\react-app\src\userComponents\Views'
+[info] [2024-12-07T04:53:17.352Z] : Shutting down server
+[info] [2024-12-07T04:53:17.763Z] : 
+[info] [2024-12-07T04:53:17.765Z] : √ Shutdown complete
+[debug] [2024-12-07T04:53:17.766Z] : NO ERRORS REGISTERED
+[debug] [2024-12-07T04:53:17.766Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-12-07T04:53:17.766Z] : TOTAL DURATION OF COMMAND EXEC : 132325
+[debug] [2024-12-07T04:53:17.868Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-12-07T04:53:21.536Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 04:53:21 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","JSESSIONID=BC48EF52C1AAA655A3BD9FDC87804A64; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T04:53:21.539Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2024-12-07T04:53:21.541Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[debug] [2024-12-07T05:01:15.486Z] : 
+[debug] [2024-12-07T05:01:15.490Z] : ----------------------------------------------------------------------
+[debug] [2024-12-07T05:01:15.490Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\91950\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-12-07T05:01:15.491Z] : CLI Version:  1.17.6
+[debug] [2024-12-07T05:01:15.491Z] : Platform:     win32
+[debug] [2024-12-07T05:01:15.492Z] : Node Version: v20.14.0
+[debug] [2024-12-07T05:01:15.492Z] : Time:         Sat Dec 07 2024 10:31:15 GMT+0530 (India Standard Time)
+[debug] [2024-12-07T05:01:15.493Z] : ----------------------------------------------------------------------
+[debug] [2024-12-07T05:01:15.493Z] : 
+[debug] [2024-12-07T05:01:17.191Z] : > authorizing via signed-in user option
+[debug] [2024-12-07T05:01:17.192Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-12-07T05:01:17.215Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001 
+
+[debug] [2024-12-07T05:01:18.259Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 05:01:18 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=c78b9478-6278-48c5-b789-eb89b0b0f5aa;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c78b9478-6278-48c5-b789-eb89b0b0f5aa;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T05:01:18.265Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/environment 
+
+[debug] [2024-12-07T05:01:18.575Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 05:01:18 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=6f33a710-4b04-4a08-bcb2-8422e2e9ee6c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6f33a710-4b04-4a08-bcb2-8422e2e9ee6c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T05:01:18.979Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-12-07T05:01:19.360Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 05:01:19 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=ee9ef908-a93f-4da3-81bf-94438fe99f34;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ee9ef908-a93f-4da3-81bf-94438fe99f34;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T05:01:19.364Z] : unknown eol undefined hence skipping check
+[debug] [2024-12-07T05:01:19.366Z] : unknown eol undefined hence skipping check
+[info] [2024-12-07T05:01:27.683Z] : [react-plugin]: Starting the development server...
+
+[info] [2024-12-07T05:01:27.685Z] : 
+[info] [2024-12-07T05:01:27.686Z] : i Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2024-12-07T05:01:27.686Z] : 
+[info] [2024-12-07T05:01:30.091Z] : 
+[info] [2024-12-07T05:01:30.092Z] :  >>>>>>>>>>>>>> BasicIO <<<<<<<<<<<<<< 
+[info] [2024-12-07T05:01:30.093Z] : i auth: http://localhost:3000/server/auth/execute
+[info] [2024-12-07T05:01:30.093Z] : 
+[info] [2024-12-07T05:01:30.094Z] : 
+[info] [2024-12-07T05:01:30.094Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-12-07T05:01:30.095Z] : i api_application_function: http://localhost:3000/server/api_application_function/
+[info] [2024-12-07T05:01:30.095Z] : 
+[info] [2024-12-07T05:01:30.095Z] : 
+[info] [2024-12-07T05:01:30.095Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-12-07T05:01:30.096Z] : i client[react-app]: http://localhost:3000/app/
+[info] [2024-12-07T05:01:30.096Z] : 
+[info] [2024-12-07T05:01:48.743Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T05:01:48.743Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 5:8:    'LoginDetails' is defined but never used       no-unused-vars
+  Line 15:10:  'userData' is assigned a value but never used  no-unused-vars
+[info] [2024-12-07T05:01:48.744Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T05:01:48.744Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T05:25:35.616Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T05:25:37.565Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T05:25:37.566Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 5:8:    'LoginDetails' is defined but never used       no-unused-vars
+  Line 15:10:  'userData' is assigned a value but never used  no-unused-vars
+[info] [2024-12-07T05:25:37.567Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T05:25:37.568Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T05:28:45.771Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T05:28:46.738Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T05:28:46.740Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 5:8:    'LoginDetails' is defined but never used       no-unused-vars
+  Line 15:10:  'userData' is assigned a value but never used  no-unused-vars
+
+src\userComponents\Views\Home.jsx
+  Line 156:9:  'AppProvider' is defined but never used  no-unused-vars
+  Line 157:8:  'Dashboard' is defined but never used    no-unused-vars
+[info] [2024-12-07T05:28:46.741Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T05:28:46.742Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T05:29:01.473Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T05:29:02.191Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T05:29:02.193Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 5:8:    'LoginDetails' is defined but never used       no-unused-vars
+  Line 15:10:  'userData' is assigned a value but never used  no-unused-vars
+
+src\userComponents\Views\Home.jsx
+  Line 156:21:  'DashboardLayout' is defined but never used  no-unused-vars
+  Line 157:8:   'Dashboard' is defined but never used        no-unused-vars
+[info] [2024-12-07T05:29:02.195Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T05:29:02.195Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T05:29:17.250Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T05:29:17.943Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T05:29:17.945Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 5:8:    'LoginDetails' is defined but never used       no-unused-vars
+  Line 15:10:  'userData' is assigned a value but never used  no-unused-vars
+
+src\userComponents\Views\Home.jsx
+  Line 156:38:  'PageContainer' is defined but never used  no-unused-vars
+  Line 157:8:   'Dashboard' is defined but never used      no-unused-vars
+[info] [2024-12-07T05:29:17.946Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T05:29:17.946Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T05:32:39.100Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T05:32:40.249Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-07T05:32:40.250Z] : [react-plugin]: Attempted import error: 'Sidebar' is not exported from '@toolpad/core' (imported as 'Sidebar').
+[info] [2024-12-07T05:35:27.725Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T05:35:29.631Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T05:35:29.632Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 5:8:    'LoginDetails' is defined but never used       no-unused-vars
+  Line 15:10:  'userData' is assigned a value but never used  no-unused-vars
+[info] [2024-12-07T05:35:29.633Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T05:35:29.634Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T05:36:21.321Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T05:36:22.365Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T05:36:22.367Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 5:8:    'LoginDetails' is defined but never used       no-unused-vars
+  Line 15:10:  'userData' is assigned a value but never used  no-unused-vars
+[info] [2024-12-07T05:36:22.368Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T05:36:22.369Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T05:38:12.517Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T05:38:13.590Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T05:38:13.591Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 5:8:    'LoginDetails' is defined but never used       no-unused-vars
+  Line 15:10:  'userData' is assigned a value but never used  no-unused-vars
+[info] [2024-12-07T05:38:13.592Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T05:38:13.594Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T05:38:26.100Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T05:38:26.945Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T05:38:26.946Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 5:8:    'LoginDetails' is defined but never used       no-unused-vars
+  Line 15:10:  'userData' is assigned a value but never used  no-unused-vars
+[info] [2024-12-07T05:38:26.947Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T05:38:26.948Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T05:38:54.933Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T05:38:55.691Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T05:38:55.692Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 5:8:    'LoginDetails' is defined but never used       no-unused-vars
+  Line 15:10:  'userData' is assigned a value but never used  no-unused-vars
+[info] [2024-12-07T05:38:55.693Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T05:38:55.694Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T05:45:59.249Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T05:46:00.287Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T05:46:00.289Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 5:8:    'LoginDetails' is defined but never used       no-unused-vars
+  Line 15:10:  'userData' is assigned a value but never used  no-unused-vars
+[info] [2024-12-07T05:46:00.290Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T05:46:00.291Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[debug] [2024-12-07T06:10:48.671Z] : > refreshing access token <
+[debug] [2024-12-07T06:10:48.676Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-07T06:10:49.663Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 06:10:49 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=9f371135a524e2d1f51eb9f41fa26c60; Path=/; Secure; HttpOnly","iamcsr=d4acb370-cbcf-4a39-a3c9-3ddbbcc9d05b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d4acb370-cbcf-4a39-a3c9-3ddbbcc9d05b;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-07T06:11:05.274Z] : Shutting down server
+[info] [2024-12-07T06:11:05.869Z] : 
+[info] [2024-12-07T06:11:05.875Z] : √ Shutdown complete
+[debug] [2024-12-07T06:11:05.877Z] : NO ERRORS REGISTERED
+[debug] [2024-12-07T06:11:05.878Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-12-07T06:11:05.878Z] : TOTAL DURATION OF COMMAND EXEC : 4188717
+[debug] [2024-12-07T06:11:05.976Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-12-07T06:11:09.820Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 06:11:09 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","JSESSIONID=5371E4322469A80F4C7BE4A3F2C1928F; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T06:11:09.821Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2024-12-07T06:11:09.823Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[debug] [2024-12-07T06:59:36.548Z] : 
+[debug] [2024-12-07T06:59:36.551Z] : ----------------------------------------------------------------------
+[debug] [2024-12-07T06:59:36.552Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\91950\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-12-07T06:59:36.552Z] : CLI Version:  1.17.6
+[debug] [2024-12-07T06:59:36.552Z] : Platform:     win32
+[debug] [2024-12-07T06:59:36.553Z] : Node Version: v20.14.0
+[debug] [2024-12-07T06:59:36.553Z] : Time:         Sat Dec 07 2024 12:29:36 GMT+0530 (India Standard Time)
+[debug] [2024-12-07T06:59:36.554Z] : ----------------------------------------------------------------------
+[debug] [2024-12-07T06:59:36.554Z] : 
+[debug] [2024-12-07T06:59:38.396Z] : > authorizing via signed-in user option
+[debug] [2024-12-07T06:59:38.397Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-12-07T06:59:38.427Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001 
+
+[debug] [2024-12-07T06:59:39.720Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 06:59:39 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=bc5b7925-d919-4f21-87d8-87ece9f9468f;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=bc5b7925-d919-4f21-87d8-87ece9f9468f;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T06:59:39.726Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/environment 
+
+[debug] [2024-12-07T06:59:40.055Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 06:59:39 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=46384450-b8f3-418f-b21b-750df2d4b7fc;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=46384450-b8f3-418f-b21b-750df2d4b7fc;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T06:59:40.509Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-12-07T06:59:40.872Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 06:59:40 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=d7fb5148-1075-4c78-84a5-2b8bf3465a97;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d7fb5148-1075-4c78-84a5-2b8bf3465a97;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T06:59:40.875Z] : unknown eol undefined hence skipping check
+[debug] [2024-12-07T06:59:40.876Z] : unknown eol undefined hence skipping check
+[info] [2024-12-07T06:59:49.001Z] : [react-plugin]: Starting the development server...
+
+[info] [2024-12-07T06:59:49.005Z] : 
+[info] [2024-12-07T06:59:49.006Z] : i Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2024-12-07T06:59:49.006Z] : 
+[info] [2024-12-07T06:59:51.204Z] : 
+[info] [2024-12-07T06:59:51.205Z] :  >>>>>>>>>>>>>> BasicIO <<<<<<<<<<<<<< 
+[info] [2024-12-07T06:59:51.206Z] : i auth: http://localhost:3000/server/auth/execute
+[info] [2024-12-07T06:59:51.206Z] : 
+[info] [2024-12-07T06:59:51.206Z] : 
+[info] [2024-12-07T06:59:51.207Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-12-07T06:59:51.207Z] : i api_application_function: http://localhost:3000/server/api_application_function/
+[info] [2024-12-07T06:59:51.208Z] : 
+[info] [2024-12-07T06:59:51.208Z] : 
+[info] [2024-12-07T06:59:51.208Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-12-07T06:59:51.209Z] : i client[react-app]: http://localhost:3000/app/
+[info] [2024-12-07T06:59:51.209Z] : 
+[info] [2024-12-07T06:59:53.361Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-07T06:59:53.362Z] : [react-plugin]: 
+[info] [2024-12-07T06:59:53.362Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-07T06:59:53.362Z] : [react-plugin]: 
+[info] [2024-12-07T06:59:53.362Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-07T06:59:53.363Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-07T06:59:53.363Z] : [react-plugin]: 
+[info] [2024-12-07T06:59:53.364Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-07T06:59:53.364Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-07T06:59:53.365Z] : [react-plugin]: 
+[debug] [2024-12-07T06:59:56.078Z] : proxy closed
+[debug] [2024-12-07T06:59:56.976Z] : proxy closed
+[info] [2024-12-07T07:01:43.700Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:01:48.906Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-07T07:01:48.907Z] : [react-plugin]: 
+[info] [2024-12-07T07:01:48.907Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-07T07:01:48.908Z] : [react-plugin]: 
+[info] [2024-12-07T07:01:48.908Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-07T07:01:48.909Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-07T07:01:48.909Z] : [react-plugin]: 
+[info] [2024-12-07T07:01:48.910Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-07T07:01:48.910Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-07T07:01:48.911Z] : [react-plugin]: 
+[info] [2024-12-07T07:02:01.614Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:02:02.705Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-07T07:02:02.705Z] : [react-plugin]: 
+[info] [2024-12-07T07:02:02.705Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-07T07:02:02.706Z] : [react-plugin]: 
+[info] [2024-12-07T07:02:02.706Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-07T07:02:02.706Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-07T07:02:02.707Z] : [react-plugin]: 
+[info] [2024-12-07T07:02:02.707Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-07T07:02:02.708Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-07T07:02:02.708Z] : [react-plugin]: 
+[info] [2024-12-07T07:05:02.549Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:05:03.903Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T07:05:03.903Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 12:8:  'Dashboard' is defined but never used  no-unused-vars
+  Line 13:8:  'ApiKey' is defined but never used     no-unused-vars
+[info] [2024-12-07T07:05:03.904Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T07:05:03.905Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T07:06:18.861Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:06:20.063Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T07:06:20.064Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 12:8:  'Dashboard' is defined but never used  no-unused-vars
+  Line 13:8:  'ApiKey' is defined but never used     no-unused-vars
+[info] [2024-12-07T07:06:20.065Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T07:06:20.065Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T07:06:27.568Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:06:28.526Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T07:06:28.526Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 12:8:  'Dashboard' is defined but never used  no-unused-vars
+  Line 13:8:  'ApiKey' is defined but never used     no-unused-vars
+[info] [2024-12-07T07:06:28.527Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T07:06:28.529Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T07:06:36.957Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:06:37.877Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T07:06:37.878Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 12:8:  'Dashboard' is defined but never used  no-unused-vars
+  Line 13:8:  'ApiKey' is defined but never used     no-unused-vars
+[info] [2024-12-07T07:06:37.879Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T07:06:37.880Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T07:07:06.973Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:07:07.937Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T07:07:07.938Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 12:8:  'Dashboard' is defined but never used  no-unused-vars
+  Line 13:8:  'ApiKey' is defined but never used     no-unused-vars
+[info] [2024-12-07T07:07:07.939Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T07:07:07.939Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T07:09:42.039Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:09:43.278Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T07:09:43.280Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 12:8:  'Dashboard' is defined but never used    no-unused-vars
+  Line 13:8:  'ApiKey' is defined but never used       no-unused-vars
+  Line 14:8:  'StocksData' is defined but never used   no-unused-vars
+  Line 15:8:  'PincodeData' is defined but never used  no-unused-vars
+[info] [2024-12-07T07:09:43.282Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T07:09:43.283Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T07:10:36.430Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:10:37.303Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T07:10:37.305Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 12:8:  'Dashboard' is defined but never used    no-unused-vars
+  Line 13:8:  'ApiKey' is defined but never used       no-unused-vars
+  Line 14:8:  'StocksData' is defined but never used   no-unused-vars
+  Line 15:8:  'PincodeData' is defined but never used  no-unused-vars
+[info] [2024-12-07T07:10:37.309Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T07:10:37.310Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T07:11:46.724Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:11:47.964Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T07:11:47.965Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 12:8:  'Dashboard' is defined but never used    no-unused-vars
+  Line 13:8:  'ApiKey' is defined but never used       no-unused-vars
+  Line 14:8:  'StocksData' is defined but never used   no-unused-vars
+  Line 15:8:  'PincodeData' is defined but never used  no-unused-vars
+[info] [2024-12-07T07:11:47.966Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T07:11:47.966Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[debug] [2024-12-07T07:11:48.280Z] : > refreshing access token <
+[debug] [2024-12-07T07:11:48.286Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-07T07:11:48.299Z] : > refreshing access token <
+[debug] [2024-12-07T07:11:48.302Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-07T07:11:49.220Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 07:11:48 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/; Secure; HttpOnly","iamcsr=4d3e4e14-1a97-4c4b-8a29-4a65dba41ce5;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4d3e4e14-1a97-4c4b-8a29-4a65dba41ce5;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T07:11:49.285Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 07:11:48 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=a7f15cb1555106de5ac96d088b72e7c8; Path=/; Secure; HttpOnly","iamcsr=d6ae92b9-58ca-416f-9566-fe00ab9a7ef7;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d6ae92b9-58ca-416f-9566-fe00ab9a7ef7;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-07T07:15:10.316Z] : Shutting down server
+[info] [2024-12-07T07:15:10.714Z] : 
+[info] [2024-12-07T07:15:10.716Z] : √ Shutdown complete
+[debug] [2024-12-07T07:15:10.716Z] : NO ERRORS REGISTERED
+[debug] [2024-12-07T07:15:10.717Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-12-07T07:15:10.717Z] : TOTAL DURATION OF COMMAND EXEC : 932349
+[debug] [2024-12-07T07:15:10.788Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-12-07T07:15:14.292Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 07:15:13 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","JSESSIONID=3232E8E9167A3D4D03616660CB79AE43; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T07:15:14.293Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2024-12-07T07:15:14.295Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[debug] [2024-12-07T07:40:47.795Z] : 
+[debug] [2024-12-07T07:40:47.797Z] : ----------------------------------------------------------------------
+[debug] [2024-12-07T07:40:47.797Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\91950\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-12-07T07:40:47.797Z] : CLI Version:  1.17.6
+[debug] [2024-12-07T07:40:47.798Z] : Platform:     win32
+[debug] [2024-12-07T07:40:47.798Z] : Node Version: v20.14.0
+[debug] [2024-12-07T07:40:47.798Z] : Time:         Sat Dec 07 2024 13:10:47 GMT+0530 (India Standard Time)
+[debug] [2024-12-07T07:40:47.798Z] : ----------------------------------------------------------------------
+[debug] [2024-12-07T07:40:47.799Z] : 
+[debug] [2024-12-07T07:40:48.681Z] : > authorizing via signed-in user option
+[debug] [2024-12-07T07:40:48.682Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-12-07T07:40:48.696Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001 
+
+[debug] [2024-12-07T07:40:49.707Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 07:40:49 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=d0c4502b-037b-400e-821d-5ccfaded635e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d0c4502b-037b-400e-821d-5ccfaded635e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T07:40:49.711Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/environment 
+
+[debug] [2024-12-07T07:40:50.012Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 07:40:49 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=4deec6c9-8600-4344-9d16-41ffef599fed;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4deec6c9-8600-4344-9d16-41ffef599fed;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T07:40:50.239Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-12-07T07:40:50.575Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 07:40:50 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=b057e5da-fbf8-432a-8ec6-e919bf072fb6;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b057e5da-fbf8-432a-8ec6-e919bf072fb6;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T07:40:50.578Z] : unknown eol undefined hence skipping check
+[debug] [2024-12-07T07:40:50.579Z] : unknown eol undefined hence skipping check
+[info] [2024-12-07T07:40:55.831Z] : [react-plugin]: Starting the development server...
+
+[info] [2024-12-07T07:40:55.833Z] : 
+[info] [2024-12-07T07:40:55.834Z] : i Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2024-12-07T07:40:55.834Z] : 
+[info] [2024-12-07T07:40:57.533Z] : 
+[info] [2024-12-07T07:40:57.533Z] :  >>>>>>>>>>>>>> BasicIO <<<<<<<<<<<<<< 
+[info] [2024-12-07T07:40:57.534Z] : i auth: http://localhost:3000/server/auth/execute
+[info] [2024-12-07T07:40:57.534Z] : 
+[info] [2024-12-07T07:40:57.535Z] : 
+[info] [2024-12-07T07:40:57.535Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-12-07T07:40:57.535Z] : i api_application_function: http://localhost:3000/server/api_application_function/
+[info] [2024-12-07T07:40:57.535Z] : 
+[info] [2024-12-07T07:40:57.536Z] : 
+[info] [2024-12-07T07:40:57.536Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-12-07T07:40:57.536Z] : i client[react-app]: http://localhost:3000/app/
+[info] [2024-12-07T07:40:57.536Z] : 
+[info] [2024-12-07T07:41:01.905Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T07:41:01.907Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 12:8:   'Dashboard' is defined but never used    no-unused-vars
+  Line 13:8:   'ApiKey' is defined but never used       no-unused-vars
+  Line 14:8:   'StocksData' is defined but never used   no-unused-vars
+  Line 15:8:   'PincodeData' is defined but never used  no-unused-vars
+  Line 18:20:  Unexpected comma in middle of array      no-sparse-arrays
+[info] [2024-12-07T07:41:01.907Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T07:41:01.908Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T07:41:28.199Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:41:28.852Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T07:41:28.852Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 12:8:  'Dashboard' is defined but never used    no-unused-vars
+  Line 13:8:  'ApiKey' is defined but never used       no-unused-vars
+  Line 14:8:  'StocksData' is defined but never used   no-unused-vars
+  Line 15:8:  'PincodeData' is defined but never used  no-unused-vars
+[info] [2024-12-07T07:41:28.853Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T07:41:28.853Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T07:42:51.995Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:42:52.510Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T07:42:52.512Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 11:8:   'Grid' is defined but never used               no-unused-vars
+  Line 12:8:   'Dashboard' is defined but never used          no-unused-vars
+  Line 13:8:   'ApiKey' is defined but never used             no-unused-vars
+  Line 14:8:   'StocksData' is defined but never used         no-unused-vars
+  Line 15:8:   'PincodeData' is defined but never used        no-unused-vars
+  Line 112:7:  'Skeleton' is assigned a value but never used  no-unused-vars
+[info] [2024-12-07T07:42:52.512Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T07:42:52.513Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T07:46:03.140Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:46:03.826Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-07T07:46:03.827Z] : [react-plugin]: Attempted import error: 'useRouteMatch' is not exported from 'react-router-dom' (imported as 'useRouteMatch').
+[info] [2024-12-07T07:46:39.207Z] : [react-plugin]: Compiling...
+[info] [2024-12-07T07:46:39.661Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-07T07:46:39.662Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 12:8:  'Dashboard' is defined but never used    no-unused-vars
+  Line 13:8:  'ApiKey' is defined but never used       no-unused-vars
+  Line 14:8:  'StocksData' is defined but never used   no-unused-vars
+  Line 15:8:  'PincodeData' is defined but never used  no-unused-vars
+[info] [2024-12-07T07:46:39.663Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-07T07:46:39.663Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-07T07:46:53.718Z] : Shutting down server
+[info] [2024-12-07T07:46:53.954Z] : 
+[info] [2024-12-07T07:46:53.955Z] : √ Shutdown complete
+[debug] [2024-12-07T07:46:53.955Z] : NO ERRORS REGISTERED
+[debug] [2024-12-07T07:46:53.955Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-12-07T07:46:53.955Z] : TOTAL DURATION OF COMMAND EXEC : 365289
+[debug] [2024-12-07T07:46:53.992Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-12-07T07:46:57.435Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sat, 07 Dec 2024 07:46:57 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","JSESSIONID=C52A3131D43F32C646D2FC30D8A076BB; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-07T07:46:57.436Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2024-12-07T07:46:57.438Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
