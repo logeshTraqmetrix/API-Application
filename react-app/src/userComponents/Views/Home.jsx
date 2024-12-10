@@ -150,6 +150,7 @@ import React from 'react'
 // import PincodeData from './PincodeData'
 import PincodeDataPlayground from '../../Swagger/PincodeDataPlayground'
 import StockDataPlayGround from '../../Swagger2/StockDataPlayGround'
+import ApiKey from './ApiKey'
 
 
 const Home = () => {
@@ -157,8 +158,9 @@ const Home = () => {
     <div>
         {/* <StocksData/> */}
         {/* <PincodeData/> */}
-        <PincodeDataPlayground/>
-        <StockDataPlayGround/>
+        {/* <PincodeDataPlayground/>
+        <StockDataPlayGround/> */}
+        <ApiKey/>
     </div>
   )
 }
