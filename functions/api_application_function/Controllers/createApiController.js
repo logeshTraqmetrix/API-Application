@@ -45,7 +45,7 @@ const UserApiData = async (req, res) => {
             // New user
             const newUserData = {
                 userEmail,
-                ApiKey:randomApiKey,
+                ApiKey: randomApiKey,
                 pincodeTableAvailableCalls: calls,
                 pincodeTableConsumedCalls: 0,
                 stockAvailableCalls: calls,
@@ -60,7 +60,7 @@ const UserApiData = async (req, res) => {
             // Existing user
             const updateData = {
                 ROWID: userData.ROWID,
-                ApiKey:randomApiKey,
+                ApiKey: randomApiKey,
                 pincodeTableAvailableCalls: parseInt(userData.pincodeTableAvailableCalls) + calls,
                 stockAvailableCalls: parseInt(userData.stockAvailableCalls) + calls,
             };
@@ -81,4 +81,15 @@ const UserApiData = async (req, res) => {
     }
 };
 
-module.exports = UserApiData;
+
+const getUserApiData = async (req, res) => {
+    const { email } = req.query
+    const catalystApp = catalyst.initialize(req)
+    const queryResponse = await catalystApp.zcql().executeZCQLQuery(`SELECT * FROM ApiDetailsTable WHERE userEmail = '${email}'`);
+    const userData = queryResponse[0]?.ApiDetailsTable;
+
+    res.status(200).json(userData)
+
+}
+
+module.exports = { UserApiData, getUserApiData }
