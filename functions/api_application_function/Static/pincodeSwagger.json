@@ -1,0 +1,168 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Pincode Data API",
+    "description": "API to retrieve data based on the pincode.",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/server/api_application_function/api/v1",
+  "schemes": ["http"],
+  "paths": {
+    "/pincodedata": {
+      "get": {
+        "summary": "Get Pincode Data",
+        "description": "Retrieve data for a specific pincode.",
+        "parameters": [
+          {
+            "name": "pincode",
+            "in": "query",
+            "description": "The pincode for which data is to be retrieved",
+            "required": true,
+            "type": "string",
+            "example": "631102"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Bearer API Key for authentication",
+            "required": true,
+            "type": "string",
+            "default": "Bearer YOUR_API_KEY_HERE"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with pincode data",
+            "schema": {
+              "$ref": "#/definitions/SuccessResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request - Invalid or missing pincode",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized - Invalid API Key",
+            "schema": {
+              "$ref": "#/definitions/AuthErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Forbidden - Insufficient permissions",
+            "schema": {
+              "$ref": "#/definitions/AuthErrorResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found - No data for the given pincode",
+            "schema": {
+              "$ref": "#/definitions/NotFoundErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/ServerErrorResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "SuccessResponse": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "success"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "PincodeData": {
+              "type": "object",
+              "properties": {
+                "pincode": {
+                  "type": "string",
+                  "example": "631102"
+                },
+                "city": {
+                  "type": "string",
+                  "example": "City Name"
+                },
+                "state": {
+                  "type": "string",
+                  "example": "State Name"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "ErrorResponse": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "Invalid pincode"
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "field": {
+                "type": "string",
+                "example": "pincode"
+              },
+              "reason": {
+                "type": "string",
+                "example": "Pincode must be a valid 6-digit number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "AuthErrorResponse": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "Invalid API KEY"
+        },
+        "errorCode": {
+          "type": "string",
+          "example": "AUTH_FAILED"
+        }
+      }
+    },
+    "NotFoundErrorResponse": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "No data found for the given pincode"
+        },
+        "suggestion": {
+          "type": "string",
+          "example": "Please verify the pincode and try again"
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}

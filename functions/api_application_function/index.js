@@ -4,6 +4,17 @@ const cors = require('cors');
 const path = require('path');
 
 app.use(express.json())
+app.use(express.static(path.join(__dirname,'Static')))
+
+
+app.get('/pincodeSwagger',(req,res)=>{
+  res.sendFile(path.join(__dirname,'Static','pincodeSwagger.json'))
+})
+
+
+app.get('/stockSwagger',(req,res)=>{
+  res.sendFile(path.join(__dirname,'Static','stockSwagger.json'))
+})
 
 
 app.use(cors());

@@ -1,0 +1,237 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Stock Data API",
+    "description": "API to fetch stock data with various flexible parameter inputs and advanced filtering."
+  },
+  "host": "localhost:3000",
+  "basePath": "/server/api_application_function/api/v1",
+  "schemes": ["http"],
+  "paths": {
+    "/stockdata": {
+      "get": {
+        "summary": "Fetch stock data with advanced filtering",
+        "description": "Retrieve stock data by applying multiple filters directly in URL. Supports comparison operators like `.greaterThan`, `.lessThan`, `.contains`, etc.",
+        "parameters": [
+          {
+            "name": "closingIndexValue.greaterThan",
+            "in": "query",
+            "description": "Filter stocks with closing index value greater than the specified value",
+            "required": false,
+            "type": "number",
+            "format": "float"
+          },
+          {
+            "name": "closingIndexValue.lessThan",
+            "in": "query",
+            "description": "Filter stocks with closing index value less than the specified value",
+            "required": false,
+            "type": "number",
+            "format": "float"
+          },
+          {
+            "name": "indexName.contains",
+            "in": "query",
+            "description": "Filter stocks with index name containing the specified substring",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "Bearer API Key for authentication",
+            "required": true,
+            "type": "string",
+            "default": "Bearer YOUR_API_KEY_HERE"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with stock data",
+            "schema": {
+              "$ref": "#/definitions/SuccessResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request - Invalid query parameters",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized - Invalid API Key",
+            "schema": {
+              "$ref": "#/definitions/AuthErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Forbidden - Insufficient permissions",
+            "schema": {
+              "$ref": "#/definitions/AuthErrorResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found - No data matching the query",
+            "schema": {
+              "$ref": "#/definitions/NotFoundErrorResponse"
+            }
+          },
+          "410": {
+            "description": "Gone - Subscription required",
+            "schema": {
+              "$ref": "#/definitions/SubscriptionErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/ServerErrorResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "SuccessResponse": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "success"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/StockData"
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "totalRecords": {
+              "type": "integer",
+              "example": 50
+            },
+            "filteredRecords": {
+              "type": "integer",
+              "example": 25
+            }
+          }
+        }
+      }
+    },
+    "StockData": {
+      "type": "object",
+      "properties": {
+        "StocksTable": {
+          "type": "object",
+          "properties": {
+            "CREATORID": { "type": "string", "example": "24836000000010009" },
+            "openIndexValue": { "type": "number", "format": "float", "example": 56400.65 },
+            "indexName": { "type": "string", "example": "NIFTY Midcap 100" },
+            "pointsChange": { "type": "number", "format": "float", "example": 608.2 },
+            "divYield": { "type": "number", "format": "float", "example": 0.8 },
+            "highIndexValue": { "type": "number", "format": "float", "example": 57060.65 },
+            "volume": { "type": "integer", "example": 750624333 },
+            "MODIFIEDTIME": { "type": "string", "format": "date-time", "example": "2024-12-04 04:02:52:298" },
+            "PB": { "type": "number", "format": "float", "example": 5.14 },
+            "PE": { "type": "number", "format": "float", "example": 41.75 },
+            "indexDate": { "type": "string", "format": "date", "example": "2024-02-11" },
+            "turnOverInCr": { "type": "number", "format": "float", "example": 17155.61 },
+            "changePercetage": { "type": "number", "format": "float", "example": 1.08 },
+            "lowIndexValue": { "type": "number", "format": "float", "example": 56227.15 },
+            "closingIndexValue": { "type": "number", "format": "float", "example": 57000.85 },
+            "ROWID": { "type": "string", "example": "24836000000011177" }
+          }
+        }
+      }
+    },
+    "ErrorResponse": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "Invalid query parameters"
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "field": {
+                "type": "string",
+                "example": "closingIndexValue.greaterThan"
+              },
+              "reason": {
+                "type": "string",
+                "example": "Value must be a positive number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "AuthErrorResponse": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "Invalid API KEY"
+        },
+        "errorCode": {
+          "type": "string",
+          "example": "AUTH_FAILED"
+        }
+      }
+    },
+    "NotFoundErrorResponse": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "No data found matching the query"
+        },
+        "suggestion": {
+          "type": "string",
+          "example": "Try adjusting your filter parameters"
+        }
+      }
+    },
+    "SubscriptionErrorResponse": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "Please Subscribe plan to continue"
+        },
+        "availablePlans": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "example": "Basic Plan"
+              },
+              "price": {
+                "type": "number",
+                "example": 49.99
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}
