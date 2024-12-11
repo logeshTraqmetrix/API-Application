@@ -1,18 +1,23 @@
-import { Box, Grid } from '@mui/material';
-import CustomSidebar from './CustomSidebar';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-const CustomLayout = ({ navigation, children }) => {
-    return (
-        <Box sx={{ display: 'flex' }}>
-            {/* Sidebar */}
-            <CustomSidebar navigation={navigation} />
-            
-            {/* Main Content */}
-            <Box sx={{ flexGrow: 1, padding: 2 }}>
-                {children}
-            </Box>
-        </Box>
-    );
+// Import your page components
+import Dashboard from '../userComponents/Views/Dashboard';
+import ApiKey from '../userComponents/Views/ApiKey'
+import About from '../userComponents/Views/About'
+
+
+const CustomLayout = () => {
+  return (
+    <div>
+      <Routes>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/apikey" element={<ApiKey />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </div>
+  );
 };
 
-export default CustomLayout;
+
+export default CustomLayout

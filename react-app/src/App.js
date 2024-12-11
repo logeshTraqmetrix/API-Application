@@ -12,7 +12,7 @@
 
 
 // const App = () => {
- 
+
 //   return (
 //     <Router>
 //       <Routes>
@@ -30,32 +30,54 @@
 
 
 
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import AppRouter from './AppRouter'
+// import { createTheme, ThemeProvider } from '@mui/material/styles';
+// import AppRouter from './AppRouter'
 
-const customTheme = createTheme({
-    palette: {
-        primary: {
-            main: '#1976d2',
-        },
-        secondary: {
-            main: '#dc004e',
-        },
-    },
-    typography: {
-        fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-        h1: {
-            fontSize: '2rem',
-        },
-    },
-});
+// const customTheme = createTheme({
+//     palette: {
+//         primary: {
+//             main: '#1976d2',
+//         },
+//         secondary: {
+//             main: '#dc004e',
+//         },
+//     },
+//     typography: {
+//         fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+//         h1: {
+//             fontSize: '2rem',
+//         },
+//     },
+// });
 
+// const App = () => {
+//     return (
+//         <ThemeProvider theme={customTheme}>
+//             <AppRouter />
+//         </ThemeProvider>
+//     );
+// };
+
+// export default App;
+
+
+
+
+
+import React from 'react';
+import { HashRouter as Router} from 'react-router-dom';
+
+import Home from './userComponents/Views/Home'
+
+// Updated App Component
 const App = () => {
-    return (
-        <ThemeProvider theme={customTheme}>
-            <AppRouter />
-        </ThemeProvider>
-    );
+  return (
+    <Router>
+      <div>
+        <Home />
+      </div>
+    </Router>
+  );
 };
 
-export default App;
+export default App

@@ -2890,3 +2890,590 @@ Response Headers: {"server":"ZGS","date":"Tue, 10 Dec 2024 13:27:27 GMT","conten
 [debug] [2024-12-10T13:27:23.639Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
 
 [debug] [2024-12-10T13:27:23.644Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[debug] [2024-12-10T13:31:43.545Z] : 
+[debug] [2024-12-10T13:31:43.547Z] : ----------------------------------------------------------------------
+[debug] [2024-12-10T13:31:43.548Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\91950\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-12-10T13:31:43.548Z] : CLI Version:  1.17.6
+[debug] [2024-12-10T13:31:43.548Z] : Platform:     win32
+[debug] [2024-12-10T13:31:43.548Z] : Node Version: v20.14.0
+[debug] [2024-12-10T13:31:43.549Z] : Time:         Tue Dec 10 2024 19:01:43 GMT+0530 (India Standard Time)
+[debug] [2024-12-10T13:31:43.549Z] : ----------------------------------------------------------------------
+[debug] [2024-12-10T13:31:43.549Z] : 
+[debug] [2024-12-10T13:31:44.989Z] : > authorizing via signed-in user option
+[debug] [2024-12-10T13:31:44.989Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-12-10T13:31:45.006Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001 
+
+[debug] [2024-12-10T13:31:46.175Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 10 Dec 2024 13:31:49 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=3edf7a06-d290-4bdb-a94d-c02daad29652;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3edf7a06-d290-4bdb-a94d-c02daad29652;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-10T13:31:46.179Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/environment 
+
+[debug] [2024-12-10T13:31:46.631Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 10 Dec 2024 13:31:50 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=c3d5ec374d3dc932973a3d50f55d8d00; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=81e4d1f0-b01f-4cba-81be-a4877806e355;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=81e4d1f0-b01f-4cba-81be-a4877806e355;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-10T13:31:47.023Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-12-10T13:31:47.380Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 10 Dec 2024 13:31:50 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=ef911e32-87d6-4792-bc51-028b49183eb0;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ef911e32-87d6-4792-bc51-028b49183eb0;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-10T13:31:47.382Z] : unknown eol undefined hence skipping check
+[debug] [2024-12-10T13:31:47.383Z] : unknown eol undefined hence skipping check
+[info] [2024-12-10T13:31:54.407Z] : [react-plugin]: Starting the development server...
+
+[info] [2024-12-10T13:31:54.409Z] : 
+[info] [2024-12-10T13:31:54.410Z] : i Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2024-12-10T13:31:54.410Z] : 
+[info] [2024-12-10T13:31:56.653Z] : 
+[info] [2024-12-10T13:31:56.654Z] :  >>>>>>>>>>>>>> BasicIO <<<<<<<<<<<<<< 
+[info] [2024-12-10T13:31:56.654Z] : i auth: http://localhost:3000/server/auth/execute
+[info] [2024-12-10T13:31:56.654Z] : 
+[info] [2024-12-10T13:31:56.654Z] : 
+[info] [2024-12-10T13:31:56.654Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-12-10T13:31:56.655Z] : i api_application_function: http://localhost:3000/server/api_application_function/
+[info] [2024-12-10T13:31:56.655Z] : 
+[info] [2024-12-10T13:31:56.655Z] : 
+[info] [2024-12-10T13:31:56.655Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-12-10T13:31:56.656Z] : i client[react-app]: http://localhost:3000/app/
+[info] [2024-12-10T13:31:56.656Z] : 
+[info] [2024-12-10T13:32:02.568Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-10T13:32:02.568Z] : [react-plugin]: 
+[info] [2024-12-10T13:32:02.569Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-10T13:32:02.569Z] : [react-plugin]: 
+[info] [2024-12-10T13:32:02.569Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-10T13:32:02.569Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-10T13:32:02.569Z] : [react-plugin]: 
+[info] [2024-12-10T13:32:02.569Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-10T13:32:02.570Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-10T13:32:02.570Z] : [react-plugin]: 
+[info] [2024-12-10T13:40:45.006Z] : Shutting down server
+[info] [2024-12-10T13:40:45.311Z] : 
+[info] [2024-12-10T13:40:45.312Z] : √ Shutdown complete
+[debug] [2024-12-10T13:40:45.313Z] : NO ERRORS REGISTERED
+[debug] [2024-12-10T13:40:45.313Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-12-10T13:40:45.314Z] : TOTAL DURATION OF COMMAND EXEC : 540342
+[debug] [2024-12-10T13:40:45.406Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-12-10T13:40:49.406Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Tue, 10 Dec 2024 13:40:52 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","set-cookie":["zalb_46512fd555=4ead9897700827f973c0f7dbded7f673; Path=/; Secure; HttpOnly","JSESSIONID=C8B5E233DB6F928E050EAF0772038575; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-10T13:40:49.407Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2024-12-10T13:40:49.409Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
+[debug] [2024-12-11T04:37:23.974Z] : 
+[debug] [2024-12-11T04:37:23.977Z] : ----------------------------------------------------------------------
+[debug] [2024-12-11T04:37:23.978Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\91950\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-12-11T04:37:23.978Z] : CLI Version:  1.17.6
+[debug] [2024-12-11T04:37:23.979Z] : Platform:     win32
+[debug] [2024-12-11T04:37:23.979Z] : Node Version: v20.14.0
+[debug] [2024-12-11T04:37:23.979Z] : Time:         Wed Dec 11 2024 10:07:23 GMT+0530 (India Standard Time)
+[debug] [2024-12-11T04:37:23.980Z] : ----------------------------------------------------------------------
+[debug] [2024-12-11T04:37:23.980Z] : 
+[debug] [2024-12-11T04:37:26.045Z] : > authorizing via signed-in user option
+[debug] [2024-12-11T04:37:26.046Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-12-11T04:37:26.068Z] : > refreshing access token <
+[debug] [2024-12-11T04:37:26.070Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-11T04:37:27.322Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 11 Dec 2024 04:37:27 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=a7f15cb1555106de5ac96d088b72e7c8; Path=/; Secure; HttpOnly","iamcsr=b1a1bfdd-f484-4dce-9a8f-8fca239555c2;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b1a1bfdd-f484-4dce-9a8f-8fca239555c2;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-11T04:37:27.365Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001 
+
+[debug] [2024-12-11T04:37:28.577Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 11 Dec 2024 04:37:28 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=b68a3580-566c-43d6-a8d9-63789413a664;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b68a3580-566c-43d6-a8d9-63789413a664;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-11T04:37:28.580Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/environment 
+
+[debug] [2024-12-11T04:37:29.003Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 11 Dec 2024 04:37:28 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=3c8d402d-818b-4e6a-b91f-ca98dcdd47af;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3c8d402d-818b-4e6a-b91f-ca98dcdd47af;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-11T04:37:29.627Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/24836000000009001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-12-11T04:37:30.048Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 11 Dec 2024 04:37:29 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_46512fd555=b14009a6059feb83ee8aa1c715a015c5; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=fbada08a-7e54-4818-b66c-1437af407cfa;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fbada08a-7e54-4818-b66c-1437af407cfa;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-11T04:37:30.052Z] : unknown eol undefined hence skipping check
+[debug] [2024-12-11T04:37:30.053Z] : unknown eol undefined hence skipping check
+[info] [2024-12-11T04:37:39.395Z] : [react-plugin]: Starting the development server...
+
+[info] [2024-12-11T04:37:39.397Z] : 
+[info] [2024-12-11T04:37:39.397Z] : i Client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2024-12-11T04:37:39.397Z] : 
+[info] [2024-12-11T04:37:42.261Z] : 
+[info] [2024-12-11T04:37:42.262Z] :  >>>>>>>>>>>>>> BasicIO <<<<<<<<<<<<<< 
+[info] [2024-12-11T04:37:42.263Z] : i auth: http://localhost:3000/server/auth/execute
+[info] [2024-12-11T04:37:42.263Z] : 
+[info] [2024-12-11T04:37:42.263Z] : 
+[info] [2024-12-11T04:37:42.263Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-12-11T04:37:42.264Z] : i api_application_function: http://localhost:3000/server/api_application_function/
+[info] [2024-12-11T04:37:42.264Z] : 
+[info] [2024-12-11T04:37:42.264Z] : 
+[info] [2024-12-11T04:37:42.265Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-12-11T04:37:42.265Z] : i client[react-app]: http://localhost:3000/app/
+[info] [2024-12-11T04:37:42.266Z] : 
+[info] [2024-12-11T04:37:50.557Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-11T04:37:50.571Z] : [react-plugin]: Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\anchor-tag-builder.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\anchor-tag-builder.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\autolinker.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\autolinker.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\html-tag.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\html-tag.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\htmlParser\parse-html.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\htmlParser\parse-html.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\index.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\index.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\email-match.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\email-match.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\hashtag-match.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\hashtag-match.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\index.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\index.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\match.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\match.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\mention-match.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\mention-match.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\phone-match.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\phone-match.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\url-match.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\match\url-match.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\email-matcher.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\email-matcher.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\hashtag-matcher.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\hashtag-matcher.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\index.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\index.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\matcher.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\matcher.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\mention-matcher.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\mention-matcher.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\phone-matcher.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\phone-matcher.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\tld-regex.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\tld-regex.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\url-match-validator.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\url-match-validator.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\url-matcher.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\matcher\url-matcher.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\regex-lib.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\regex-lib.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\truncate\truncate-end.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\truncate\truncate-end.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\truncate\truncate-middle.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\truncate\truncate-middle.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\truncate\truncate-smart.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\truncate\truncate-smart.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\utils.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\utils.ts'
+
+Failed to parse source map from 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\version.ts' file: Error: ENOENT: no such file or directory, open 'C:\catalyst projects\API Application\react-app\node_modules\autolinker\src\version.ts'
+
+[eslint] 
+src\userComponents\Views\Home.jsx
+  Line 149:8:  'PincodeDataPlayground' is defined but never used  no-unused-vars
+  Line 150:8:  'StockDataPlayGround' is defined but never used    no-unused-vars
+[info] [2024-12-11T04:37:50.573Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-11T04:37:50.573Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-11T04:41:53.860Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T04:41:55.069Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T04:41:55.070Z] : [react-plugin]: 
+[info] [2024-12-11T04:41:55.071Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T04:41:55.071Z] : [react-plugin]: 
+[info] [2024-12-11T04:41:55.072Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T04:41:55.072Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T04:41:55.072Z] : [react-plugin]: 
+[info] [2024-12-11T04:41:55.073Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T04:41:55.074Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T04:41:55.074Z] : [react-plugin]: 
+[info] [2024-12-11T04:43:51.120Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T04:43:53.311Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-11T04:43:53.311Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 152:8:  'Styles' is defined but never used  no-unused-vars
+[info] [2024-12-11T04:43:53.312Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-11T04:43:53.313Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-11T04:45:00.240Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T04:45:00.972Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T04:45:00.973Z] : [react-plugin]: 
+[info] [2024-12-11T04:45:00.973Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T04:45:00.973Z] : [react-plugin]: 
+[info] [2024-12-11T04:45:00.974Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T04:45:00.974Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T04:45:00.975Z] : [react-plugin]: 
+[info] [2024-12-11T04:45:00.975Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T04:45:00.976Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T04:45:00.976Z] : [react-plugin]: 
+[info] [2024-12-11T04:45:29.408Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T04:45:29.697Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T04:45:29.697Z] : [react-plugin]: 
+[info] [2024-12-11T04:45:29.697Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T04:45:29.698Z] : [react-plugin]: 
+[info] [2024-12-11T04:45:29.698Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T04:45:29.699Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T04:45:29.699Z] : [react-plugin]: 
+[info] [2024-12-11T04:45:29.700Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T04:45:29.700Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T04:45:29.701Z] : [react-plugin]: 
+[info] [2024-12-11T04:47:53.491Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-11T04:47:53.492Z] : [react-plugin]: Module not found: Error: Can't resolve './home.module.css' in 'C:\catalyst projects\API Application\react-app\src\userComponents\Views'
+[info] [2024-12-11T04:48:08.010Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T04:48:08.307Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T04:48:08.308Z] : [react-plugin]: 
+[info] [2024-12-11T04:48:08.308Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T04:48:08.309Z] : [react-plugin]: 
+[info] [2024-12-11T04:48:08.309Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T04:48:08.310Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T04:48:08.310Z] : [react-plugin]: 
+[info] [2024-12-11T04:48:08.311Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T04:48:08.312Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T04:48:08.312Z] : [react-plugin]: 
+[info] [2024-12-11T04:49:36.486Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T04:49:37.300Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T04:49:37.301Z] : [react-plugin]: 
+[info] [2024-12-11T04:49:37.301Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T04:49:37.301Z] : [react-plugin]: 
+[info] [2024-12-11T04:49:37.301Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T04:49:37.302Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T04:49:37.303Z] : [react-plugin]: 
+[info] [2024-12-11T04:49:37.304Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T04:49:37.305Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T04:49:37.305Z] : [react-plugin]: 
+[info] [2024-12-11T04:50:47.907Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T04:50:48.575Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T04:50:48.576Z] : [react-plugin]: 
+[info] [2024-12-11T04:50:48.576Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T04:50:48.576Z] : [react-plugin]: 
+[info] [2024-12-11T04:50:48.577Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T04:50:48.577Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T04:50:48.577Z] : [react-plugin]: 
+[info] [2024-12-11T04:50:48.578Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T04:50:48.578Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T04:50:48.579Z] : [react-plugin]: 
+[info] [2024-12-11T05:03:41.593Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:03:42.264Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:03:42.265Z] : [react-plugin]: 
+[info] [2024-12-11T05:03:42.266Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:03:42.266Z] : [react-plugin]: 
+[info] [2024-12-11T05:03:42.266Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:03:42.267Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:03:42.268Z] : [react-plugin]: 
+[info] [2024-12-11T05:03:42.269Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:03:42.270Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:03:42.270Z] : [react-plugin]: 
+[info] [2024-12-11T05:04:59.180Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:04:59.808Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:04:59.809Z] : [react-plugin]: 
+[info] [2024-12-11T05:04:59.810Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:04:59.811Z] : [react-plugin]: 
+[info] [2024-12-11T05:04:59.811Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:04:59.813Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:04:59.815Z] : [react-plugin]: 
+[info] [2024-12-11T05:04:59.817Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:04:59.818Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:04:59.819Z] : [react-plugin]: 
+[info] [2024-12-11T05:04:59.881Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:04:59.998Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:04:59.999Z] : [react-plugin]: 
+[info] [2024-12-11T05:04:59.999Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:05:00.000Z] : [react-plugin]: 
+[info] [2024-12-11T05:05:00.000Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:05:00.001Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:05:00.002Z] : [react-plugin]: 
+[info] [2024-12-11T05:05:00.004Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:05:00.005Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:05:00.006Z] : [react-plugin]: 
+[info] [2024-12-11T05:05:08.063Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:05:08.278Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:05:08.278Z] : [react-plugin]: 
+[info] [2024-12-11T05:05:08.278Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:05:08.279Z] : [react-plugin]: 
+[info] [2024-12-11T05:05:08.279Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:05:08.279Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:05:08.281Z] : [react-plugin]: 
+[info] [2024-12-11T05:05:08.282Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:05:08.284Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:05:08.288Z] : [react-plugin]: 
+[info] [2024-12-11T05:05:08.317Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:05:08.467Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:05:08.467Z] : [react-plugin]: 
+[info] [2024-12-11T05:05:08.468Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:05:08.468Z] : [react-plugin]: 
+[info] [2024-12-11T05:05:08.468Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:05:08.469Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:05:08.470Z] : [react-plugin]: 
+[info] [2024-12-11T05:05:08.470Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:05:08.471Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:05:08.471Z] : [react-plugin]: 
+[info] [2024-12-11T05:06:47.786Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:06:48.581Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-11T05:06:48.581Z] : [react-plugin]: [eslint] 
+src\userComponents\Views\Home.jsx
+  Line 152:8:  'Styles' is defined but never used  no-unused-vars
+[info] [2024-12-11T05:06:48.582Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-11T05:06:48.584Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-11T05:07:54.714Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:07:55.387Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:07:55.388Z] : [react-plugin]: 
+[info] [2024-12-11T05:07:55.389Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:07:55.389Z] : [react-plugin]: 
+[info] [2024-12-11T05:07:55.390Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:07:55.390Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:07:55.391Z] : [react-plugin]: 
+[info] [2024-12-11T05:07:55.391Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:07:55.392Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:07:55.393Z] : [react-plugin]: 
+[info] [2024-12-11T05:08:10.822Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:08:11.026Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:08:11.026Z] : [react-plugin]: 
+[info] [2024-12-11T05:08:11.027Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:08:11.027Z] : [react-plugin]: 
+[info] [2024-12-11T05:08:11.027Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:08:11.028Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:08:11.028Z] : [react-plugin]: 
+[info] [2024-12-11T05:08:11.029Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:08:11.029Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:08:11.030Z] : [react-plugin]: 
+[info] [2024-12-11T05:08:11.053Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:08:11.154Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:08:11.155Z] : [react-plugin]: 
+[info] [2024-12-11T05:08:11.156Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:08:11.156Z] : [react-plugin]: 
+[info] [2024-12-11T05:08:11.156Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:08:11.157Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:08:11.158Z] : [react-plugin]: 
+[info] [2024-12-11T05:08:11.159Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:08:11.160Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:08:11.160Z] : [react-plugin]: 
+[info] [2024-12-11T05:11:54.864Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:11:55.617Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:11:55.617Z] : [react-plugin]: 
+[info] [2024-12-11T05:11:55.618Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:11:55.618Z] : [react-plugin]: 
+[info] [2024-12-11T05:11:55.618Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:11:55.619Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:11:55.619Z] : [react-plugin]: 
+[info] [2024-12-11T05:11:55.620Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:11:55.621Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:11:55.621Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:00.468Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:12:00.732Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:12:00.733Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:00.733Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:12:00.733Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:00.733Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:12:00.734Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:12:00.734Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:00.735Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:12:00.735Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:12:00.736Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:24.798Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:12:25.063Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:12:25.064Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:25.064Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:12:25.064Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:25.065Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:12:25.065Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:12:25.066Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:25.067Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:12:25.067Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:12:25.068Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:49.254Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:12:49.496Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:12:49.497Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:49.497Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:12:49.497Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:49.498Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:12:49.498Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:12:49.499Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:49.499Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:12:49.499Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:12:49.500Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:49.526Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:12:49.717Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:12:49.718Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:49.720Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:12:49.721Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:49.721Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:12:49.722Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:12:49.724Z] : [react-plugin]: 
+[info] [2024-12-11T05:12:49.725Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:12:49.725Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:12:49.726Z] : [react-plugin]: 
+[info] [2024-12-11T05:23:13.602Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:23:14.262Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-11T05:23:14.265Z] : [react-plugin]: SyntaxError: C:\catalyst projects\API Application\react-app\src\App.js: Identifier 'React' has already been declared. (102:7)
+  100 |
+  101 | // Updated CustomSidebar Component
+> 102 | import React from 'react';
+      |        ^
+  103 | import { Link } from 'react-router-dom';
+  104 | import Styles from './sidebar.module.css';
+  105 |
+    at parser.next (<anonymous>)
+    at normalizeFile.next (<anonymous>)
+    at run.next (<anonymous>)
+    at transform.next (<anonymous>)
+[info] [2024-12-11T05:23:53.302Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:23:53.517Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-11T05:23:53.517Z] : [react-plugin]: SyntaxError: C:\catalyst projects\API Application\react-app\src\App.js: Identifier 'CustomSidebar' has already been declared. (103:6)
+  101 | // Updated CustomSidebar Component
+  102 |
+> 103 | const CustomSidebar = () => {
+      |       ^
+  104 |   const routes = [
+  105 |     { path: '/', name: 'Dashboard' },
+  106 |     { path: '/profile', name: 'Profile' },
+    at parser.next (<anonymous>)
+    at normalizeFile.next (<anonymous>)
+    at run.next (<anonymous>)
+    at transform.next (<anonymous>)
+[info] [2024-12-11T05:25:27.253Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:25:27.882Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-11T05:25:27.882Z] : [react-plugin]: SyntaxError: C:\catalyst projects\API Application\react-app\src\App.js: Identifier 'React' has already been declared. (128:7)
+  126 |
+  127 | // Updated CustomLayout Component
+> 128 | import React from 'react';
+      |        ^
+  129 | import { Routes, Route } from 'react-router-dom';
+  130 |
+  131 | const CustomLayout = () => {
+    at parser.next (<anonymous>)
+    at normalizeFile.next (<anonymous>)
+    at run.next (<anonymous>)
+    at transform.next (<anonymous>)
+[info] [2024-12-11T05:25:48.243Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:25:48.429Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-11T05:25:48.430Z] : [react-plugin]: SyntaxError: C:\catalyst projects\API Application\react-app\src\App.js: Identifier 'CustomLayout' has already been declared. (131:6)
+  129 | // import { Routes, Route } from 'react-router-dom';
+  130 |
+> 131 | const CustomLayout = () => {
+      |       ^
+  132 |   return (
+  133 |     <div>
+  134 |       <Routes>
+    at parser.next (<anonymous>)
+    at normalizeFile.next (<anonymous>)
+    at run.next (<anonymous>)
+    at transform.next (<anonymous>)
+[info] [2024-12-11T05:26:12.672Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:26:12.876Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-11T05:26:12.877Z] : [react-plugin]: SyntaxError: C:\catalyst projects\API Application\react-app\src\App.js: Identifier 'Dashboard' has already been declared. (144:6)
+  142 |
+  143 | // Example Page Components (create these in appropriate directories)
+> 144 | const Dashboard = () => <div>Dashboard Content</div>;
+      |       ^
+  145 | const Profile = () => <div>Profile Content</div>;
+  146 | const Settings = () => <div>Settings Content</div>;
+  147 |
+    at parser.next (<anonymous>)
+    at normalizeFile.next (<anonymous>)
+    at run.next (<anonymous>)
+    at transform.next (<anonymous>)
+[info] [2024-12-11T05:26:25.960Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:26:27.470Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-11T05:26:27.471Z] : [react-plugin]: Module not found: Error: Can't resolve '../../Components/Navbar' in 'C:\catalyst projects\API Application\react-app\src'
+[info] [2024-12-11T05:26:56.098Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:26:56.462Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-11T05:26:56.462Z] : [react-plugin]: Module not found: Error: Can't resolve '../../Components/Navbar' in 'C:\catalyst projects\API Application\react-app\src'
+[info] [2024-12-11T05:31:30.289Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:31:31.029Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-11T05:31:31.030Z] : [react-plugin]: Attempted import error: './App' does not contain a default export (imported as 'App').
+[info] [2024-12-11T05:31:45.284Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:31:45.556Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-11T05:31:45.556Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 77:10:  'Home' is not defined  react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2024-12-11T05:32:11.052Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:32:12.531Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-11T05:32:12.531Z] : [react-plugin]: Attempted import error: './userComponents/Views/Home' does not contain a default export (imported as 'Home').
+[info] [2024-12-11T05:32:49.057Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:32:49.366Z] : [react-plugin]: Failed to compile.
+
+[info] [2024-12-11T05:32:49.367Z] : [react-plugin]: Module not found: Error: Can't resolve './userComponents/Views/Dashboard' in 'C:\catalyst projects\API Application\react-app\src\Components'
+[info] [2024-12-11T05:36:38.336Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:36:41.108Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-11T05:36:41.108Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 68:35:  'Routes' is defined but never used  no-unused-vars
+  Line 68:43:  'Route' is defined but never used   no-unused-vars
+  Line 68:50:  'Link' is defined but never used    no-unused-vars
+[info] [2024-12-11T05:36:41.108Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-11T05:36:41.109Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2024-12-11T05:37:26.757Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:37:27.323Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2024-12-11T05:37:27.323Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 68:35:  'Routes' is defined but never used  no-unused-vars
+  Line 68:43:  'Route' is defined but never used   no-unused-vars
+  Line 68:50:  'Link' is defined but never used    no-unused-vars
+[info] [2024-12-11T05:37:27.323Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2024-12-11T05:37:27.324Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[debug] [2024-12-11T05:37:27.645Z] : > refreshing access token <
+[debug] [2024-12-11T05:37:27.652Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-11T05:37:28.682Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 11 Dec 2024 05:37:28 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/; Secure; HttpOnly","iamcsr=a2f7e0c8-2d67-455d-b2b8-f408a0ec3837;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a2f7e0c8-2d67-455d-b2b8-f408a0ec3837;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-12-11T05:39:07.187Z] : [react-plugin]: Compiling...
+[info] [2024-12-11T05:39:08.295Z] : [react-plugin]: Compiled successfully!
+[info] [2024-12-11T05:39:08.296Z] : [react-plugin]: 
+[info] [2024-12-11T05:39:08.297Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2024-12-11T05:39:08.298Z] : [react-plugin]: 
+[info] [2024-12-11T05:39:08.298Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2024-12-11T05:39:08.299Z] : [react-plugin]:   On Your Network:  http://172.24.160.1:3000/app/
+[info] [2024-12-11T05:39:08.299Z] : [react-plugin]: 
+[info] [2024-12-11T05:39:08.300Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2024-12-11T05:39:08.300Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2024-12-11T05:39:08.300Z] : [react-plugin]: 
+[info] [2024-12-11T06:58:16.149Z] : Shutting down server
+[info] [2024-12-11T06:58:16.643Z] : 
+[info] [2024-12-11T06:58:16.645Z] : √ Shutdown complete
+[debug] [2024-12-11T06:58:16.648Z] : NO ERRORS REGISTERED
+[debug] [2024-12-11T06:58:16.649Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-12-11T06:58:16.649Z] : TOTAL DURATION OF COMMAND EXEC : 8450629
+[debug] [2024-12-11T06:58:16.758Z] : > refreshing access token <
+[debug] [2024-12-11T06:58:16.760Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-12-11T06:58:17.921Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 11 Dec 2024 06:58:17 GMT","content-type":"application/json;charset=UTF-8","content-length":"1980","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/; Secure; HttpOnly","iamcsr=b07599f4-c899-4681-a3ad-827f0f499488;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b07599f4-c899-4681-a3ad-827f0f499488;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-11T06:58:17.992Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2024-12-11T06:58:23.176Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Wed, 11 Dec 2024 06:58:22 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"141","connection":"keep-alive","set-cookie":["zalb_46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/; Secure; HttpOnly","JSESSIONID=B9A1AB14BDBBB0BFC4D0732E5AFC4E14; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-12-11T06:58:23.177Z] : Response Body : {"status":"failure","data":{"error_code":"MORE_THAN_MAX_LENGTH","message":"Please check if the length of the input is in the correct range"}}
+
+[debug] [2024-12-11T06:58:23.180Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the length of the input is in the correct range
