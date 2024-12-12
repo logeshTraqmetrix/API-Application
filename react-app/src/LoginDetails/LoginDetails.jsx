@@ -1,26 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { Card, CardContent, Typography, Avatar, Box, Button } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import EventIcon from '@mui/icons-material/Event';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-import axios from 'axios';
+import { MyContext } from '../MyProvider'
 
 const LoginDetails = () => {
-  const [userDetails, setUserDetails] = useState({});
-
-  useEffect(() => {
-    const fetchUserRole = async () => {
-      try {
-        const res = await axios.get('/server/api_application_function/getuserdetails');
-        console.log('user details login', res.data);
-        setUserDetails(res.data);
-      } catch (err) {
-        console.error('Error fetching user role:', err);
-      }
-    };
-    fetchUserRole();
-  }, []);
+  const { state } = useContext(MyContext)
+ 
 
   const logout = () => {
     const redirectURL = "/";
@@ -28,7 +16,7 @@ const LoginDetails = () => {
   };
 
   return (
-    <Card 
+    <Card
       sx={{
         maxWidth: 400,
         mx: 'auto',
@@ -47,32 +35,32 @@ const LoginDetails = () => {
               height: 80,
               mb: 2,
             }}
-            src={`https://ui-avatars.com/api/?name=${userDetails.first_name}+${userDetails.last_name}&background=random`}
-            alt={`${userDetails.first_name} ${userDetails.last_name}`}
+            src={`https://ui-avatars.com/api/?name=${state.first_name}+${state.last_name}&background=random`}
+            alt={`${state.first_name} ${state.last_name}`}
           />
           <Typography variant="h5" component="h2" sx={{ fontWeight: 600, color: '#2d3748' }}>
-            {`${userDetails.first_name} ${userDetails.last_name}`}
+            {`${state.first_name} ${state.last_name}`}
           </Typography>
           <Box display="flex" alignItems="center" mt={1} color="#718096">
             <EmailIcon fontSize="small" sx={{ mr: 1 }} />
             <Typography variant="body2">
-              {userDetails.email_id}
+              {state.email_id}
             </Typography>
           </Box>
           <Typography variant="caption" color="textSecondary" sx={{ mt: 1 }}>
-            User ID: {userDetails.user_id}
+            User ID: {state.user_id}
           </Typography>
 
           <Box display="flex" alignItems="center" mt={2} color="#4a5568">
             <EventIcon sx={{ mr: 1 }} />
             <Typography variant="body2">
-              Created: {new Date(userDetails.created_time).toLocaleDateString()}
+              Created: {new Date(state.created_time).toLocaleDateString()}
             </Typography>
           </Box>
           <Box display="flex" alignItems="center" mt={1} color="#4a5568">
             <PersonAddIcon sx={{ mr: 1 }} />
             <Typography variant="body2">
-              Invited: {new Date(userDetails.invited_time).toLocaleDateString()}
+              Invited: {new Date(state.invited_time).toLocaleDateString()}
             </Typography>
           </Box>
 

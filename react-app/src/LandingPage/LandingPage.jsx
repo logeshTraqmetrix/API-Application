@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './landingPage.module.css'
+import LoginDetails from '../LoginDetails/LoginDetails'
 
 const LandingPage = () => {
 
@@ -16,6 +17,8 @@ const LandingPage = () => {
                 </div>
                 
             </nav>
+
+           
         </div>
     )
 }
