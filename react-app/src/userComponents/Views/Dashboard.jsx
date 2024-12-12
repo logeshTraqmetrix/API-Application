@@ -1,13 +1,9 @@
-import React from "react";
-import {Grid, Skeleton} from '@mui/material'
+import React from 'react'
 
-const Dashboard = ()=>{
-    return(
-        <Grid container spacing={1}>
-           <Skeleton height={14}/>
-        </Grid>
-    )
-
+const Dashboard = () => {
+  return (
+    <div>Dashboard</div>
+  )
 }
 
-export default  Dashboard
+export default Dashboard
