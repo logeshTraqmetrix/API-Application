@@ -15,6 +15,7 @@ import StockDataPlayGround from './userComponents/Views/StockDataPlayGround'
 import Subscription from './userComponents/Subscription/Subscription'
 import Notfound from './Static/Notfound'
 import LoginDetails from './LoginDetails/LoginDetails';
+import PricingCalculator from './userComponents/Views/PricingCalculator';
 
 const router = createHashRouter(
   createRoutesFromElements(
@@ -28,6 +29,7 @@ const router = createHashRouter(
         <Route path="pincode-api-playground" element={<PincodeDataPlayground />} />
         <Route path="subscription" element={<Subscription />} />
         <Route path="apikey" element={<ApiKey />} />
+        <Route path="calculator" element={<PricingCalculator />} />
         <Route path="account" element={<LoginDetails />} />
         <Route path="about" element={<About />} />
       </Route>

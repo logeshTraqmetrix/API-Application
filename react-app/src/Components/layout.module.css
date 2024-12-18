@@ -2,12 +2,12 @@
 .mainDiv {
     display: flex;
     min-height: 95vh;
-    margin-top: 5vh;  /* Assuming Navbar takes 5vh */
+   
   }
   
   .contentArea {
     width: 85%;
-    margin-left: 280px;  /* This should match sidebar width */
-    padding: 20px;
-    overflow-y: auto;
+    height: 90vh;
+   margin-left: 15%;
+   margin-top: 8vh;
   }

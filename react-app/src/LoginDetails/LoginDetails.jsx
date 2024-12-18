@@ -7,7 +7,7 @@ import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import { MyContext } from '../MyProvider'
 
 const LoginDetails = () => {
-  const { state } = useContext(MyContext)
+  const  state  = useContext(MyContext).state.loginData
  
 
   const logout = () => {

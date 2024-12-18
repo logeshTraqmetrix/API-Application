@@ -1,6 +1,0 @@
-{
-    "name": "react-app",
-    "version": "0.0.1",
-    "homepage": "/",
-    "login_redirect" : "/#/home"
-}

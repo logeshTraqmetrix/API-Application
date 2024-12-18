@@ -1,9 +1,23 @@
 import React from 'react'
-import Styles from './navbar.module.css'
 
 const Navbar = () => {
   return (
-    <div className={Styles.maindiv}>Navbar</div>
+    <div style={{
+      height:"8vh",
+      backgroundColor:"white",
+      position:'fixed',
+      width:'100vw',
+      top:0,
+      display:'flex',
+      alignItems:'center',
+      paddingLeft:20,
+      boxShadow:'0 4px 6px rgba(0,0,0,0.1)',
+      fontFamily: "'Arial', sans-serif"
+    }}>
+      <div >
+        Api Application
+      </div>
+    </div>
   )
 }
 
