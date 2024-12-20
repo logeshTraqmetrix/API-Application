@@ -6,7 +6,7 @@ module.exports = (context, basicIO) => {
   const requestDetails = catalystApp.userManagement().getSignupValidationRequest(basicIO);
 
   if (requestDetails) {
-    if (requestDetails.user_details.email_id.includes("@gmail.com")) {
+    if (requestDetails.user_details.email_id.includes("@zohotest.com")) {
       
       basicIO.write(
         JSON.stringify({

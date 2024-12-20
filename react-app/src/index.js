@@ -16,12 +16,14 @@ import Subscription from './userComponents/Subscription/Subscription'
 import Notfound from './Static/Notfound'
 import LoginDetails from './LoginDetails/LoginDetails';
 import PricingCalculator from './userComponents/Views/PricingCalculator';
+import ProtectedRoute from './ProtectedRoute';
+import AdminDashboard from './AdminComponents/Views/AdminHome';
 
 const router = createHashRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<LandingPage />} />
-      <Route path="home" element={<CustomLayout />}>
+      <Route path="home" element={<ProtectedRoute><CustomLayout /></ProtectedRoute>}>
         <Route index element={<Dashboard />} />
         <Route path="stockdata" element={<StocksData />} />
         <Route path="pincodedata" element={<PincodeData />} />
@@ -29,11 +31,10 @@ const router = createHashRouter(
         <Route path="pincode-api-playground" element={<PincodeDataPlayground />} />
         <Route path="subscription" element={<Subscription />} />
         <Route path="apikey" element={<ApiKey />} />
-        <Route path="calculator" element={<PricingCalculator />} />
         <Route path="account" element={<LoginDetails />} />
         <Route path="about" element={<About />} />
       </Route>
-      <Route path='*' element={<Notfound/>}/>
+      <Route path='*' element={<Notfound />} />
     </>
   )
 );

@@ -1,5 +1,6 @@
 // import React from 'react';
 // import { NavLink } from 'react-router-dom';
+// import { FaHome, FaCogs, FaUser, FaInfoCircle, FaKey } from 'react-icons/fa';
 // import './CustomSidebar.css';
 
 // const CustomSidebar = () => {
@@ -8,16 +9,15 @@
 //       <div className="sidebar-container">
 //         <nav className="sidebar-nav">
 //           <div className="sidebar-tabs">
-//             <TabLink to="/home" label="Dashboard" />
-//             <TabLink to="/home/stockdata" label="Stocks API Docs" />
-//             <TabLink to="/home/pincodedata" label="Pincode API Docs" />
-//             <TabLink to="/home/stock-api-playground" label="Stocks Playground" />
-//             <TabLink to="/home/pincode-api-playground" label="Pincode Playground" />
-//             <TabLink to="/home/subscription" label="Subscription" />
-//             <TabLink to="/home/apikey" label="API Key" />
-//             <TabLink to="/home/calculator" label="Calculator" />
-//             <TabLink to="/home/account" label="Account" />
-//             <TabLink to="/home/about" label="About" />
+//             <TabLink to="/home" label="Dashboard" Icon={<FaHome />} />
+//             <TabLink to="/home/stockdata" label="Stocks API Docs" Icon={<FaKey />} />
+//             <TabLink to="/home/pincodedata" label="Pincode API Docs" Icon={<FaKey />} />
+//             <TabLink to="/home/stock-api-playground" label="Stocks Playground" Icon={<FaCogs />} />
+//             <TabLink to="/home/pincode-api-playground" label="Pincode Playground" Icon={<FaCogs />} />
+//             <TabLink to="/home/subscription" label="Subscription" Icon={<FaCogs />} />
+//             <TabLink to="/home/apikey" label="API Key" Icon={<FaKey />} />
+//             <TabLink to="/home/account" label="Account" Icon={<FaUser />} />
+//             <TabLink to="/home/about" label="About" Icon={<FaInfoCircle />} />
 //           </div>
 //         </nav>
 //       </div>
@@ -25,20 +25,13 @@
 //   );
 // };
 
-// const TabLink = ({ to, label }) => {
+// const TabLink = ({ to, label, Icon }) => {
 //   return (
 //     <NavLink to={to} end className="tab-link">
 //       <div className="tab-content">
-//         <span>{label}</span>
+//         <span className="tab-label">{label}</span>
 //         <span className="tab-indicator">
-//           <svg 
-//             width="16" 
-//             height="16" 
-//             viewBox="0 0 16 16" 
-//             fill="currentColor"
-//           >
-//             <path d="M5.293 12.293a1 1 0 0 0 1.414 1.414l5-5a1 1 0 0 0 0-1.414l-5-5a1 1 0 0 0-1.414 1.414L9.586 8l-4.293 4.293z"/>
-//           </svg>
+//           {Icon}
 //         </span>
 //       </div>
 //     </NavLink>
@@ -53,46 +46,51 @@
 
 
 
-
-
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaHome, FaCogs, FaUser, FaInfoCircle, FaKey } from 'react-icons/fa'; // Import React Icons
-import './CustomSidebar.css';
+import { 
+  LayoutDashboard, 
+  Database, 
+  Mail, 
+  PlayCircle,
+  Key, 
+  CreditCard,
+  UserCircle,
+  Info
+} from 'lucide-react';
+import './layout.css'
 
 const CustomSidebar = () => {
+  const menuItems = [
+    { path: '/home', label: 'Dashboard', icon: LayoutDashboard },
+    { path: '/home/stockdata', label: 'Stock API Docs', icon: Database },
+    { path: '/home/pincodedata', label: 'Pincode API Docs', icon: Mail },
+    { path: '/home/stock-api-playground', label: 'Stock Playground', icon: PlayCircle },
+    { path: '/home/pincode-api-playground', label: 'Pincode Playground', icon: PlayCircle },
+    { path: '/home/subscription', label: 'Subscription', icon: CreditCard },
+    { path: '/home/apikey', label: 'API Keys', icon: Key },
+    { path: '/home/account', label: 'Account', icon: UserCircle },
+    { path: '/home/about', label: 'About', icon: Info }
+  ];
+
   return (
     <div className="sidebar">
-      <div className="sidebar-container">
-        <nav className="sidebar-nav">
-          <div className="sidebar-tabs">
-            <TabLink to="/home" label="Dashboard" Icon={<FaHome />} />
-            <TabLink to="/home/stockdata" label="Stocks API Docs" Icon={<FaKey />} />
-            <TabLink to="/home/pincodedata" label="Pincode API Docs" Icon={<FaKey />} />
-            <TabLink to="/home/stock-api-playground" label="Stocks Playground" Icon={<FaCogs />} />
-            <TabLink to="/home/pincode-api-playground" label="Pincode Playground" Icon={<FaCogs />} />
-            <TabLink to="/home/subscription" label="Subscription" Icon={<FaCogs />} />
-            <TabLink to="/home/apikey" label="API Key" Icon={<FaKey />} />
-            <TabLink to="/home/calculator" label="Calculator" Icon={<FaCogs />} />
-            <TabLink to="/home/account" label="Account" Icon={<FaUser />} />
-            <TabLink to="/home/about" label="About" Icon={<FaInfoCircle />} />
-          </div>
-        </nav>
+      <div className="sidebar-content">
+        {menuItems.map((item) => (
+          <NavLink
+            key={item.path}
+            to={item.path}
+            end
+            className={({ isActive }) =>
+              `sidebar-link ${isActive ? 'sidebar-link-active' : ''}`
+            }
+          >
+            <item.icon className="sidebar-icon" />
+            <span className="sidebar-label">{item.label}</span>
+          </NavLink>
+        ))}
       </div>
     </div>
-  );
-};
-
-const TabLink = ({ to, label, Icon }) => {
-  return (
-    <NavLink to={to} end className="tab-link">
-      <div className="tab-content">
-        <span className="tab-label">{label}</span>
-        <span className="tab-indicator">
-          {Icon} {/* Use the passed React icon */}
-        </span>
-      </div>
-    </NavLink>
   );
 };
 

@@ -1,3 +1,158 @@
+// import React, { useContext, useState, useEffect } from 'react';
+// import { MyContext } from '../../MyProvider';
+// import {
+//   Card,
+//   CardContent,
+//   Typography,
+//   Box,
+//   Grid,
+//   Container,
+//   CircularProgress,
+//   Grid2,
+// } from '@mui/material';
+// import { Pie } from 'react-chartjs-2';
+// import {
+//   Chart as ChartJS,
+//   ArcElement,
+//   Tooltip,
+//   Legend
+// } from 'chart.js';
+
+// ChartJS.register(ArcElement, Tooltip, Legend);
+
+// const Dashboard = () => {
+//   const { state } = useContext(MyContext);
+//   const [loading, setLoading] = useState(true);
+//   const [apiData, setApiData] = useState(null);
+
+//   useEffect(() => {
+//     if (state.apiData) {
+//       setApiData(state.apiData);
+//       setLoading(false);
+//     }
+//   }, [state.apiData]);
+
+//   if (loading) {
+//     return (
+//       <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+//         <CircularProgress />
+//       </Box>
+//     );
+//   }
+
+//   const {
+//     pincodeTableAvailableCalls,
+//     pincodeTableConsumedCalls,
+//     stockAvailableCalls,
+//     stockConsumedCalls,
+//   } = apiData;
+
+//   console.log('dashboard data from dashboard component', apiData);
+
+//   // Data for Pie Charts
+//   const pincodeChartData = {
+//     labels: ['Consumed Calls', 'Available Calls'],
+//     datasets: [
+//       {
+//         data: [pincodeTableConsumedCalls, pincodeTableAvailableCalls],
+//         backgroundColor: ['#FF6384', '#36A2EB'],
+//         hoverBackgroundColor: ['#FF6384', '#36A2EB'],
+//       },
+//     ],
+//   };
+
+//   const stockChartData = {
+//     labels: ['Consumed Calls', 'Available Calls'],
+//     datasets: [
+//       {
+//         data: [stockConsumedCalls, stockAvailableCalls],
+//         backgroundColor: ['#FF9F40', '#4BC0C0'],
+//         hoverBackgroundColor: ['#FF9F40', '#4BC0C0'],
+//       },
+//     ],
+//   };
+
+//   return (
+//    <Grid2 sx={{ bgcolor: '#f5f5f5', py: 4 ,height:'92vh'}}>
+//       <Grid  spacing={4} justifyContent="center" sx={{
+//         display:'flex',
+//         justifyContent:'space-evenly'
+//       }}>
+//         <Grid item xs={12} sm={6} md={3}>
+//           <Card>
+//             <CardContent>
+//               <Typography variant="h6">Pincode Used Calls</Typography>
+//               <Typography variant="h4">{pincodeTableConsumedCalls}</Typography>
+//             </CardContent>
+//           </Card>
+//         </Grid>
+//         <Grid item xs={12} sm={6} md={3}>
+//           <Card>
+//             <CardContent>
+//               <Typography variant="h6">Pincode Available Calls</Typography>
+//               <Typography variant="h4">{pincodeTableAvailableCalls}</Typography>
+//             </CardContent>
+//           </Card>
+//         </Grid>
+//         <Grid item xs={12} sm={6} md={3}>
+//           <Card>
+//             <CardContent>
+//               <Typography variant="h6">Stock Used Calls</Typography>
+//               <Typography variant="h4">{stockConsumedCalls}</Typography>
+//             </CardContent>
+//           </Card>
+//         </Grid>
+//         <Grid item xs={12} sm={6} md={3}>
+//           <Card>
+//             <CardContent>
+//               <Typography variant="h6">Stock Available Calls</Typography>
+//               <Typography variant="h4">{stockAvailableCalls}</Typography>
+//             </CardContent>
+//           </Card>
+//         </Grid>
+//       </Grid>
+
+//       <Grid container spacing={4} mt={4} sx={{
+//         width:'90%',
+    
+//       }}>
+//         <Grid item xs={12} md={6}>
+//           <Card>
+//             <CardContent>
+//               <Typography variant="h6" gutterBottom>
+//                 Pincode Calls Usage
+//               </Typography>
+//               <Pie data={pincodeChartData} />
+//             </CardContent>
+//           </Card>
+//         </Grid>
+//         <Grid item xs={12} md={6}>
+//           <Card>
+//             <CardContent>
+//               <Typography variant="h6" gutterBottom>
+//                 Stock Calls Usage
+//               </Typography>
+//               <Pie data={stockChartData} />
+//             </CardContent>
+//           </Card>
+//         </Grid>
+//       </Grid>
+//       </Grid2>
+//   );
+// };
+
+// export default Dashboard;
+
+
+
+
+
+
+
+
+
+
+
 import React, { useContext, useState, useEffect } from 'react';
 import {
   Card,
@@ -22,7 +177,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 const Dashboard = () => {
   const theme = useTheme();
   const [loading, setLoading] = useState(true);
-  const [apiData, setApiData] = useState({
+  const [apiData] = useState({
     pincodeTableAvailableCalls: 1000,
     pincodeTableConsumedCalls: 500,
     stockAvailableCalls: 2000,
@@ -41,7 +196,7 @@ const Dashboard = () => {
           display: 'flex', 
           justifyContent: 'center', 
           alignItems: 'center', 
-          height: '100vh' 
+          height: '92vh' 
         }}
       >
         <CircularProgress />
@@ -120,7 +275,7 @@ const Dashboard = () => {
   );
 
   return (
-    <Box sx={{ bgcolor: 'grey.50', minHeight: '100vh', py: 4 }}>
+    <Box sx={{ bgcolor: 'grey.50', minHeight: '75vh', py: 4 }}>
       <Container maxWidth="xl">
         <Typography variant="h4" sx={{ mb: 4, fontWeight: 'bold' }}>
           Dashboard

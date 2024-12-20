@@ -7,7 +7,9 @@
   },
   "host": "localhost:3000",
   "basePath": "/server/api_application_function/api/v1",
-  "schemes": ["http"],
+  "schemes": [
+    "http"
+  ],
   "paths": {
     "/stockdata": {
       "get": {
@@ -128,22 +130,82 @@
         "StocksTable": {
           "type": "object",
           "properties": {
-            "CREATORID": { "type": "string", "example": "24836000000010009" },
-            "openIndexValue": { "type": "number", "format": "float", "example": 56400.65 },
-            "indexName": { "type": "string", "example": "NIFTY Midcap 100" },
-            "pointsChange": { "type": "number", "format": "float", "example": 608.2 },
-            "divYield": { "type": "number", "format": "float", "example": 0.8 },
-            "highIndexValue": { "type": "number", "format": "float", "example": 57060.65 },
-            "volume": { "type": "integer", "example": 750624333 },
-            "MODIFIEDTIME": { "type": "string", "format": "date-time", "example": "2024-12-04 04:02:52:298" },
-            "PB": { "type": "number", "format": "float", "example": 5.14 },
-            "PE": { "type": "number", "format": "float", "example": 41.75 },
-            "indexDate": { "type": "string", "format": "date", "example": "2024-02-11" },
-            "turnOverInCr": { "type": "number", "format": "float", "example": 17155.61 },
-            "changePercetage": { "type": "number", "format": "float", "example": 1.08 },
-            "lowIndexValue": { "type": "number", "format": "float", "example": 56227.15 },
-            "closingIndexValue": { "type": "number", "format": "float", "example": 57000.85 },
-            "ROWID": { "type": "string", "example": "24836000000011177" }
+            "CREATORID": {
+              "type": "string",
+              "example": "24836000000010009"
+            },
+            "openIndexValue": {
+              "type": "number",
+              "format": "float",
+              "example": 56400.65
+            },
+            "indexName": {
+              "type": "string",
+              "example": "NIFTY Midcap 100"
+            },
+            "pointsChange": {
+              "type": "number",
+              "format": "float",
+              "example": 608.2
+            },
+            "divYield": {
+              "type": "number",
+              "format": "float",
+              "example": 0.8
+            },
+            "highIndexValue": {
+              "type": "number",
+              "format": "float",
+              "example": 57060.65
+            },
+            "volume": {
+              "type": "integer",
+              "example": 750624333
+            },
+            "MODIFIEDTIME": {
+              "type": "string",
+              "format": "date-time",
+              "example": "2024-12-04 04:02:52:298"
+            },
+            "PB": {
+              "type": "number",
+              "format": "float",
+              "example": 5.14
+            },
+            "PE": {
+              "type": "number",
+              "format": "float",
+              "example": 41.75
+            },
+            "indexDate": {
+              "type": "string",
+              "format": "date",
+              "example": "2024-02-11"
+            },
+            "turnOverInCr": {
+              "type": "number",
+              "format": "float",
+              "example": 17155.61
+            },
+            "changePercetage": {
+              "type": "number",
+              "format": "float",
+              "example": 1.08
+            },
+            "lowIndexValue": {
+              "type": "number",
+              "format": "float",
+              "example": 56227.15
+            },
+            "closingIndexValue": {
+              "type": "number",
+              "format": "float",
+              "example": 57000.85
+            },
+            "ROWID": {
+              "type": "string",
+              "example": "24836000000011177"
+            }
           }
         }
       }
@@ -223,14 +285,32 @@
           }
         }
       }
-    }
-  },
-  "components": {
-    "securitySchemes": {
-      "BearerAuth": {
-        "type": "http",
-        "scheme": "bearer",
-        "bearerFormat": "JWT"
+    },
+    "ServerErrorResponse": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "An unexpected error occurred on the server."
+        },
+        "errorCode": {
+          "type": "string",
+          "example": "INTERNAL_SERVER_ERROR"
+        },
+        "details": {
+          "type": "object",
+          "properties": {
+            "traceId": {
+              "type": "string",
+              "example": "12345-67890"
+            },
+            "timestamp": {
+              "type": "string",
+              "format": "date-time",
+              "example": "2024-12-20T14:48:00.000Z"
+            }
+          }
+        }
       }
     }
   }
