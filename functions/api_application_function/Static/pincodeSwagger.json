@@ -5,9 +5,9 @@
     "description": "API to retrieve data based on the pincode.",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "api-application-872720375.development.catalystserverless.com",
   "basePath": "/server/api_application_function/api/v1",
-  "schemes": ["http"],
+  "schemes": ["https"],
   "paths": {
     "/pincodedata": {
       "get": {
@@ -20,10 +20,10 @@
             "description": "The pincode for which data is to be retrieved",
             "required": true,
             "type": "string",
-            "example": "631102"
+            "example": "600002"
           },
           {
-            "name": "Authorization",
+            "name": "api_key",
             "in": "header",
             "description": "Bearer API Key for authentication",
             "required": true,
@@ -172,7 +172,7 @@
   "components": {
     "securitySchemes": {
       "BearerAuth": {
-        "type": "http",
+        "type": "https",
         "scheme": "bearer",
         "bearerFormat": "JWT"
       }

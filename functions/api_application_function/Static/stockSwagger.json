@@ -5,10 +5,10 @@
     "title": "Stock Data API",
     "description": "API to fetch stock data with various flexible parameter inputs and advanced filtering."
   },
-  "host": "localhost:3000",
+  "host": "api-application-872720375.development.catalystserverless.com",
   "basePath": "/server/api_application_function/api/v1",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/stockdata": {
@@ -40,7 +40,7 @@
             "type": "string"
           },
           {
-            "name": "Authorization",
+            "name": "api_key",
             "in": "header",
             "description": "Bearer API Key for authentication",
             "required": true,
@@ -107,19 +107,6 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/StockData"
-          }
-        },
-        "metadata": {
-          "type": "object",
-          "properties": {
-            "totalRecords": {
-              "type": "integer",
-              "example": 50
-            },
-            "filteredRecords": {
-              "type": "integer",
-              "example": 25
-            }
           }
         }
       }

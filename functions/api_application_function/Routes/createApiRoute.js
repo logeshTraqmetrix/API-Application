@@ -7,6 +7,8 @@ route.route('/userApi').post(UserApiData)
 
 route.route('/getUserApi').get(getUserApiData)
 
-route.route('/getAdminData').get(AdminData)
+// route.route('/getAdminData').get(AdminData)
+
+route.route('/getAllUserDetails').get(AdminData)
 
 module.exports = route

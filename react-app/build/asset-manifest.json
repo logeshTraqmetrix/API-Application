@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/app/static/css/main.dff2d383.css",
-    "main.js": "/app/static/js/main.ea8989b4.js",
+    "main.css": "/app/static/css/main.75dc9cb3.css",
+    "main.js": "/app/static/js/main.e999edf0.js",
     "static/js/453.45c1065d.chunk.js": "/app/static/js/453.45c1065d.chunk.js",
     "static/media/InterVariable-Italic.woff2": "/app/static/media/InterVariable-Italic.e295f70fe3e2df296c7b.woff2",
     "static/media/InterVariable.woff2": "/app/static/media/InterVariable.a0e477f2f1f9d2376fde.woff2",
     "static/media/primeicons.svg": "/app/static/media/primeicons.6ed59f962963a4a73af2.svg",
+    "static/media/Doc.png": "/app/static/media/Doc.cbaef309ed45be2270a2.png",
+    "static/media/Playground.png": "/app/static/media/Playground.9d742d289e23ac2f7e52.png",
+    "static/media/Dashboard.png": "/app/static/media/Dashboard.4556580aedeeb902ebe7.png",
     "static/media/primeicons.eot": "/app/static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
     "static/media/primeicons.woff": "/app/static/media/primeicons.8931fda1930c3bd21e96.woff",
     "static/media/primeicons.ttf": "/app/static/media/primeicons.a5c2a53d1ff7a9ff5933.ttf",
     "static/media/primeicons.woff2": "/app/static/media/primeicons.024b32cc7bf399b1a847.woff2",
     "index.html": "/app/index.html",
-    "main.dff2d383.css.map": "/app/static/css/main.dff2d383.css.map",
-    "main.ea8989b4.js.map": "/app/static/js/main.ea8989b4.js.map",
+    "main.75dc9cb3.css.map": "/app/static/css/main.75dc9cb3.css.map",
+    "main.e999edf0.js.map": "/app/static/js/main.e999edf0.js.map",
     "453.45c1065d.chunk.js.map": "/app/static/js/453.45c1065d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dff2d383.css",
-    "static/js/main.ea8989b4.js"
+    "static/css/main.75dc9cb3.css",
+    "static/js/main.e999edf0.js"
   ]
 }

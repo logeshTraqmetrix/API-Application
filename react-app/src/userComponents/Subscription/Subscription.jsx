@@ -1068,26 +1068,705 @@
 
 
 
-import React, { useContext } from "react";
+// import React, { useContext, useState } from "react";
+// import axios from "axios";
+// import { MyContext } from "../../MyProvider";
+// import { Box, Grid, Card, CardContent, Typography, Button } from "@mui/material";
+
+
+// const Subscription = () => {
+
+//   const { state } = useContext(MyContext)
+
+//   const [enableFree,setEnableFree] = useState(false)
+
+//   if (state.apiData == '' || state.apiData.freeTrail == false) {
+//     setEnableFree(true)
+//   }
+
+//   const applyPlan = (planValue) => {
+//     let payload = {
+//       email: state.loginData.email_id,
+//       planValue,
+//     }
+
+//     console.log('subscription payload', payload)
+//     axios
+//       .post("/server/api_application_function/userApi", payload)
+//       .then((response) => {
+//         console.log("response from creating api payment", response.data);
+//       })
+//       .catch((error) => {
+//         console.log("error in api creation or payment", error);
+//       });
+//   };
+
+//   return (
+//     <Box
+//       sx={{
+//         maxWidth: "1200px",
+//         margin: "0 auto",
+//         padding: "20px",
+//         fontFamily: "Arial, sans-serif",
+//       }}
+//     >
+//       {/* Title */}
+//       <Typography
+//         variant="h4"
+//         align="center"
+//         gutterBottom
+//         sx={{ fontWeight: "bold", color: "#333" }}
+//       >
+//         Subscription Plans
+//       </Typography>
+
+//       {/* Cards Grid */}
+//       <Grid container spacing={3} justifyContent="center">
+//         {/* Free Plan */}
+//         <Grid item xs={12} sm={6} md={4}>
+//           <Card
+//             elevation={3}
+//             sx={{
+//               textAlign: "center",
+//               borderRadius: 2,
+//               transition: "transform 0.3s",
+//               "&:hover": { transform: "translateY(-10px)" },
+//             }}
+//           >
+//             <CardContent>
+//               <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+//                 Free
+//               </Typography>
+//               <Typography color="textSecondary" sx={{ mb: 2 }}>
+//                 Everything you need to get started
+//               </Typography>
+//               <Typography variant="h6" color="success.main" gutterBottom>
+//                 ₹0
+//               </Typography >
+//               <Box sx={{
+//                 display: 'flex',
+//                 justifyContent: 'center'
+//               }}>
+//                 <ul style={{ listStyle: "none", padding: 0, margin: "10px 0", textAlign: 'left' }}>
+//                   <li>✅ Start building</li>
+//                   <li>✅ No payment required</li>
+//                   <li>✅ Free API key</li>
+//                   <li>✅ 5 API calls for each API</li>
+//                 </ul>
+//               </Box>
+//               <Button
+//                 variant="contained"
+//                 color="primary"
+//                 onClick={() => applyPlan(0)}
+//               >
+//                 Get Started for Free
+//               </Button>
+//             </CardContent>
+//           </Card>
+//         </Grid>
+
+//         {/* Standard Plan */}
+//         <Grid item xs={12} sm={6} md={4}>
+//           <Card
+//             elevation={3}
+//             sx={{
+//               textAlign: "center",
+//               borderRadius: 2,
+//               transition: "transform 0.3s",
+//               "&:hover": { transform: "translateY(-10px)" },
+//             }}
+//           >
+//             <CardContent>
+//               <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+//                 Standard
+//               </Typography>
+//               <Typography color="textSecondary" sx={{ mb: 2 }}>
+//                 Scale Your Application
+//               </Typography>
+//               <Typography variant="h6" color="success.main" gutterBottom>
+//                 ₹5
+//               </Typography>
+//               <Box sx={{
+//                 display: 'flex',
+//                 justifyContent: 'center'
+//               }}>
+//                 <ul style={{ listStyle: "none", padding: 0, margin: "10px 0", textAlign: 'left' }}>
+//                   <li>✅ Start building</li>
+//                   <li>✅ No payment required</li>
+//                   <li>✅ Free API key</li>
+//                   <li>✅ 10 API calls</li>
+//                 </ul>
+//               </Box>
+
+//               <Button
+//                 variant="contained"
+//                 color="primary"
+//                 onClick={() => applyPlan(2)}
+//               >
+//                 Upgrade to Standard
+//               </Button>
+//             </CardContent>
+//           </Card>
+//         </Grid>
+
+//         {/* Professional Plan */}
+//         <Grid item xs={12} sm={6} md={4}>
+//           <Card
+//             elevation={3}
+//             sx={{
+//               textAlign: "center",
+//               borderRadius: 2,
+//               transition: "transform 0.3s",
+//               "&:hover": { transform: "translateY(-10px)" },
+//             }}
+//           >
+//             <CardContent>
+//               <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+//                 Professional
+//               </Typography>
+//               <Typography color="textSecondary" sx={{ mb: 2 }}>
+//                 Unlock advanced features
+//               </Typography>
+//               <Typography variant="h6" color="success.main" gutterBottom>
+//                 ₹10
+//               </Typography>
+//               <Box sx={{
+//                 display: 'flex',
+//                 justifyContent: 'center'
+//               }}>
+//                 <ul style={{ listStyle: "none", padding: 0, margin: "10px 0", textAlign: 'left' }}>
+//                   <li>✅ Start building</li>
+//                   <li>✅ No payment required</li>
+//                   <li>✅ Free API key</li>
+//                   <li>✅ 15 API calls</li>
+//                 </ul>
+//               </Box>
+//               <Button
+//                 variant="contained"
+//                 color="primary"
+//                 onClick={() => applyPlan(10)}
+//               >
+//                 Go Professional
+//               </Button>
+//             </CardContent>
+//           </Card>
+//         </Grid>
+//       </Grid>
+//     </Box>
+//   );
+// };
+
+// export default Subscription;
+
+
+
+
+
+
+
+
+
+// import React, { useContext, useState, useEffect } from "react";
+// import axios from "axios";
+// import { MyContext } from "../../MyProvider";
+// import { Box, Grid, Card, CardContent, Typography, Button, Snackbar } from "@mui/material";
+
+// const Subscription = () => {
+//   const { state } = useContext(MyContext);
+//   const [enableFree, setEnableFree] = useState(false);
+//   const [openSnackbar, setOpenSnackbar] = useState(false); // Snackbar state
+//   const [snackbarMessage, setSnackbarMessage] = useState(""); // Snackbar message
+
+//   // Update enableFree when apiData changes
+//   useEffect(() => {
+//     if (state.apiData === "" || state.apiData.freeTrail === false) {
+//       setEnableFree(true);
+//     }
+//   }, [state.apiData]); // Run this effect only when state.apiData changes
+
+//   const applyPlan = (planValue) => {
+//     let payload = {
+//       email: state.loginData.email_id,
+//       planValue,
+//     };
+
+//     console.log("subscription payload", payload);
+//     axios
+//       .post("/server/api_application_function/userApi", payload)
+//       .then((response) => {
+//         console.log("response from creating api payment", response.data);
+//         // Show Snackbar on success
+//         setSnackbarMessage("Subscription successful!");
+//         setOpenSnackbar(true);
+//       })
+//       .catch((error) => {
+//         console.log("error in api creation or payment", error);
+//         // Show error Snackbar on failure
+//         setSnackbarMessage("Something went wrong, please try again.");
+//         setOpenSnackbar(true);
+//       });
+//   };
+
+//   return (
+//     <Box
+//       sx={{
+//         maxWidth: "1200px",
+//         margin: "0 auto",
+//         padding: "20px",
+//         fontFamily: "Arial, sans-serif",
+//       }}
+//     >
+//       {/* Title */}
+//       <Typography
+//         variant="h4"
+//         align="center"
+//         gutterBottom
+//         sx={{ fontWeight: "bold", color: "#333" }}
+//       >
+//         Subscription Plans
+//       </Typography>
+
+//       {/* Cards Grid */}
+//       <Grid container spacing={3} justifyContent="center">
+//         {/* Free Plan */}
+//         <Grid item xs={12} sm={6} md={4}>
+//           <Card
+//             elevation={3}
+//             sx={{
+//               textAlign: "center",
+//               borderRadius: 2,
+//               transition: "transform 0.3s",
+//               "&:hover": { transform: "translateY(-10px)" },
+//             }}
+//           >
+//             <CardContent>
+//               <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+//                 Free
+//               </Typography>
+//               <Typography color="textSecondary" sx={{ mb: 2 }}>
+//                 Everything you need to get started
+//               </Typography>
+//               <Typography variant="h6" color="success.main" gutterBottom>
+//                 ₹0
+//               </Typography>
+//               <Box
+//                 sx={{
+//                   display: "flex",
+//                   justifyContent: "center",
+//                 }}
+//               >
+//                 <ul style={{ listStyle: "none", padding: 0, margin: "10px 0", textAlign: "left" }}>
+//                   <li>✅ Start building</li>
+//                   <li>✅ No payment required</li>
+//                   <li>✅ Free API key</li>
+//                   <li>✅ 5 API calls for each API</li>
+//                 </ul>
+//               </Box>
+//               <Button
+//                 variant="contained"
+//                 color="primary"
+//                 onClick={() => applyPlan(0)}
+//                 disabled={!enableFree} // Enable button only if enableFree is true
+//               >
+//                 Get Started for Free
+//               </Button>
+//             </CardContent>
+//           </Card>
+//         </Grid>
+
+//         {/* Standard Plan */}
+//         <Grid item xs={12} sm={6} md={4}>
+//           <Card
+//             elevation={3}
+//             sx={{
+//               textAlign: "center",
+//               borderRadius: 2,
+//               transition: "transform 0.3s",
+//               "&:hover": { transform: "translateY(-10px)" },
+//             }}
+//           >
+//             <CardContent>
+//               <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+//                 Standard
+//               </Typography>
+//               <Typography color="textSecondary" sx={{ mb: 2 }}>
+//                 Scale Your Application
+//               </Typography>
+//               <Typography variant="h6" color="success.main" gutterBottom>
+//                 ₹5
+//               </Typography>
+//               <Box
+//                 sx={{
+//                   display: "flex",
+//                   justifyContent: "center",
+//                 }}
+//               >
+//                 <ul style={{ listStyle: "none", padding: 0, margin: "10px 0", textAlign: "left" }}>
+//                   <li>✅ Start building</li>
+//                   <li>✅ No payment required</li>
+//                   <li>✅ Free API key</li>
+//                   <li>✅ 10 API calls</li>
+//                 </ul>
+//               </Box>
+
+//               <Button
+//                 variant="contained"
+//                 color="primary"
+//                 onClick={() => applyPlan(2)}
+//               >
+//                 Upgrade to Standard
+//               </Button>
+//             </CardContent>
+//           </Card>
+//         </Grid>
+
+//         {/* Professional Plan */}
+//         <Grid item xs={12} sm={6} md={4}>
+//           <Card
+//             elevation={3}
+//             sx={{
+//               textAlign: "center",
+//               borderRadius: 2,
+//               transition: "transform 0.3s",
+//               "&:hover": { transform: "translateY(-10px)" },
+//             }}
+//           >
+//             <CardContent>
+//               <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+//                 Professional
+//               </Typography>
+//               <Typography color="textSecondary" sx={{ mb: 2 }}>
+//                 Unlock advanced features
+//               </Typography>
+//               <Typography variant="h6" color="success.main" gutterBottom>
+//                 ₹10
+//               </Typography>
+//               <Box
+//                 sx={{
+//                   display: "flex",
+//                   justifyContent: "center",
+//                 }}
+//               >
+//                 <ul style={{ listStyle: "none", padding: 0, margin: "10px 0", textAlign: "left" }}>
+//                   <li>✅ Start building</li>
+//                   <li>✅ No payment required</li>
+//                   <li>✅ Free API key</li>
+//                   <li>✅ 15 API calls</li>
+//                 </ul>
+//               </Box>
+//               <Button
+//                 variant="contained"
+//                 color="primary"
+//                 onClick={() => applyPlan(10)}
+//               >
+//                 Go Professional
+//               </Button>
+//             </CardContent>
+//           </Card>
+//         </Grid>
+//       </Grid>
+
+//       {/* Snackbar for subscription success or error */}
+//       <Snackbar
+//         open={openSnackbar}
+//         autoHideDuration={6000}
+//         onClose={() => setOpenSnackbar(false)}
+//         message={snackbarMessage}
+//       />
+//     </Box>
+//   );
+// };
+
+// export default Subscription;
+
+
+
+
+
+
+
+
+
+// import React, { useContext, useState, useEffect } from "react";
+// import axios from "axios";
+// import { useNavigate } from "react-router-dom"; // Import useHistory for navigation
+// import { MyContext } from "../../MyProvider";
+// import { Box, Grid, Card, CardContent, Typography, Button, Snackbar } from "@mui/material";
+
+// const Subscription = () => {
+//   const { state } = useContext(MyContext);
+//   const [enableFree, setEnableFree] = useState(false);
+//   const [openSnackbar, setOpenSnackbar] = useState(false); // Snackbar state
+//   const [snackbarMessage, setSnackbarMessage] = useState(""); // Snackbar message
+//   const history = useNavigate(); // Use useHistory for navigation
+
+//   // Update enableFree when apiData changes
+//   useEffect(() => {
+//     if (state.apiData === "" || state.apiData.freeTrail === false) {
+//       setEnableFree(true);
+//     }
+//   }, [state.apiData]); // Run this effect only when state.apiData changes
+
+//   const applyPlan = (planValue) => {
+//     let payload = {
+//       email: state.loginData.email_id,
+//       planValue,
+//     };
+
+//     console.log("subscription payload", payload);
+//     axios
+//       .post("/server/api_application_function/userApi", payload)
+//       .then((response) => {
+//         console.log("response from creating api payment", response.data);
+//         // Show Snackbar on success
+//         setSnackbarMessage("Subscription successful!");
+//         setOpenSnackbar(true);
+
+//         // Reload the page and navigate to /home after success
+//         setTimeout(() => {
+//           history("/home"); // Navigate to /home
+//           window.location.reload(); // Reload the page
+        
+//         }, 2000); // Give some time for Snackbar to be shown before redirect
+//       })
+//       .catch((error) => {
+//         console.log("error in api creation or payment", error);
+//         // Show error Snackbar on failure
+//         setSnackbarMessage("Something went wrong, please try again.");
+//         setOpenSnackbar(true);
+//       });
+//   };
+
+//   return (
+//     <Box
+//       sx={{
+//         maxWidth: "1200px",
+//         margin: "0 auto",
+//         padding: "20px",
+//         fontFamily: "Arial, sans-serif",
+//       }}
+//     >
+//       {/* Title */}
+//       <Typography
+//         variant="h4"
+//         align="center"
+//         gutterBottom
+//         sx={{ fontWeight: "bold", color: "#333" }}
+//       >
+//         Subscription Plans
+//       </Typography>
+
+//       {/* Cards Grid */}
+//       <Grid container spacing={3} justifyContent="center">
+//         {/* Free Plan */}
+//         <Grid item xs={12} sm={6} md={4}>
+//           <Card
+//             elevation={3}
+//             sx={{
+//               textAlign: "center",
+//               borderRadius: 2,
+//               transition: "transform 0.3s",
+//               "&:hover": { transform: "translateY(-10px)" },
+//             }}
+//           >
+//             <CardContent>
+//               <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+//                 Free
+//               </Typography>
+//               <Typography color="textSecondary" sx={{ mb: 2 }}>
+//                 Everything you need to get started
+//               </Typography>
+//               <Typography variant="h6" color="success.main" gutterBottom>
+//                 ₹0
+//               </Typography>
+//               <Box
+//                 sx={{
+//                   display: "flex",
+//                   justifyContent: "center",
+//                 }}
+//               >
+//                 <ul style={{ listStyle: "none", padding: 0, margin: "10px 0", textAlign: "left" }}>
+//                   <li>✅ Start building</li>
+//                   <li>✅ No payment required</li>
+//                   <li>✅ Free API key</li>
+//                   <li>✅ 5 API calls for each API</li>
+//                 </ul>
+//               </Box>
+//               <Button
+//                 variant="contained"
+//                 color="primary"
+//                 onClick={() => applyPlan(0)}
+//                 disabled={!enableFree} // Enable button only if enableFree is true
+//               >
+//                 {enableFree ? "Get Started for Free" : "You have used free tier"}
+//               </Button>
+//             </CardContent>
+//           </Card>
+//         </Grid>
+
+//         {/* Standard Plan */}
+//         <Grid item xs={12} sm={6} md={4}>
+//           <Card
+//             elevation={3}
+//             sx={{
+//               textAlign: "center",
+//               borderRadius: 2,
+//               transition: "transform 0.3s",
+//               "&:hover": { transform: "translateY(-10px)" },
+//             }}
+//           >
+//             <CardContent>
+//               <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+//                 Standard
+//               </Typography>
+//               <Typography color="textSecondary" sx={{ mb: 2 }}>
+//                 Scale Your Application
+//               </Typography>
+//               <Typography variant="h6" color="success.main" gutterBottom>
+//                 ₹5
+//               </Typography>
+//               <Box
+//                 sx={{
+//                   display: "flex",
+//                   justifyContent: "center",
+//                 }}
+//               >
+//                 <ul style={{ listStyle: "none", padding: 0, margin: "10px 0", textAlign: "left" }}>
+//                   <li>✅ Start building</li>
+//                   <li>✅ No payment required</li>
+//                   <li>✅ Free API key</li>
+//                   <li>✅ 10 API calls</li>
+//                 </ul>
+//               </Box>
+
+//               <Button
+//                 variant="contained"
+//                 color="primary"
+//                 onClick={() => applyPlan(2)}
+//               >
+//                 Upgrade to Standard
+//               </Button>
+//             </CardContent>
+//           </Card>
+//         </Grid>
+
+//         {/* Professional Plan */}
+//         <Grid item xs={12} sm={6} md={4}>
+//           <Card
+//             elevation={3}
+//             sx={{
+//               textAlign: "center",
+//               borderRadius: 2,
+//               transition: "transform 0.3s",
+//               "&:hover": { transform: "translateY(-10px)" },
+//             }}
+//           >
+//             <CardContent>
+//               <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+//                 Professional
+//               </Typography>
+//               <Typography color="textSecondary" sx={{ mb: 2 }}>
+//                 Unlock advanced features
+//               </Typography>
+//               <Typography variant="h6" color="success.main" gutterBottom>
+//                 ₹10
+//               </Typography>
+//               <Box
+//                 sx={{
+//                   display: "flex",
+//                   justifyContent: "center",
+//                 }}
+//               >
+//                 <ul style={{ listStyle: "none", padding: 0, margin: "10px 0", textAlign: "left" }}>
+//                   <li>✅ Start building</li>
+//                   <li>✅ No payment required</li>
+//                   <li>✅ Free API key</li>
+//                   <li>✅ 15 API calls</li>
+//                 </ul>
+//               </Box>
+//               <Button
+//                 variant="contained"
+//                 color="primary"
+//                 onClick={() => applyPlan(10)}
+//               >
+//                 Go Professional
+//               </Button>
+//             </CardContent>
+//           </Card>
+//         </Grid>
+//       </Grid>
+
+//       {/* Snackbar for subscription success or error */}
+//       <Snackbar
+//         open={openSnackbar}
+//         autoHideDuration={6000}
+//         onClose={() => setOpenSnackbar(false)}
+//         message={snackbarMessage}
+//       />
+//     </Box>
+//   );
+// };
+
+// export default Subscription;
+
+
+
+
+
+
+
+
+import React, { useContext, useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom"; 
 import { MyContext } from "../../MyProvider";
 import { Box, Grid, Card, CardContent, Typography, Button } from "@mui/material";
-
+import Swal from "sweetalert2"; // Import SweetAlert2
 
 const Subscription = () => {
   const { state } = useContext(MyContext);
+  const [enableFree, setEnableFree] = useState(false);
+  const history = useNavigate(); 
+
+  // Update enableFree when apiData changes
+  useEffect(() => {
+    if (state.apiData === "" || state.apiData.freeTrail === false) {
+      setEnableFree(true);
+    }
+  }, [state.apiData]);
 
   const applyPlan = (planValue) => {
+    let payload = {
+      email: state.loginData.email_id,
+      planValue,
+    };
+
+    console.log("subscription payload", payload);
     axios
-      .post("/server/api_application_function/userApi", {
-        email: state.email_id,
-        planValue,
-      })
+      .post("/server/api_application_function/userApi", payload)
       .then((response) => {
         console.log("response from creating api payment", response.data);
+        // Show SweetAlert on success
+        Swal.fire({
+          title: "Subscription Successful!",
+          text: "Your subscription was successful!",
+          icon: "success",
+          confirmButtonText: "OK",
+        }).then(() => {
+          // Navigate to /home and refresh the page once the user clicks OK
+          history("/home");
+          window.location.reload();
+        });
       })
       .catch((error) => {
         console.log("error in api creation or payment", error);
+        // Handle errors if needed
+        Swal.fire({
+          title: "Error!",
+          text: "Something went wrong, please try again.",
+          icon: "error",
+          confirmButtonText: "OK",
+        });
       });
   };
 
@@ -1132,24 +1811,27 @@ const Subscription = () => {
               </Typography>
               <Typography variant="h6" color="success.main" gutterBottom>
                 ₹0
-              </Typography >
-             <Box sx={{
-                display:'flex',
-                justifyContent:'center'
-             }}>
-             <ul style={{ listStyle: "none", padding: 0, margin: "10px 0" ,textAlign:'left'}}>
-                <li>✅ Start building</li>
-                <li>✅ No payment required</li>
-                <li>✅ Free API key</li>
-                <li>✅ 5 API calls for each API</li>
-              </ul>
-             </Box>
+              </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <ul style={{ listStyle: "none", padding: 0, margin: "10px 0", textAlign: "left" }}>
+                  <li>✅ Start building</li>
+                  <li>✅ No payment required</li>
+                  <li>✅ Free API key</li>
+                  <li>✅ 5 API calls for each API</li>
+                </ul>
+              </Box>
               <Button
                 variant="contained"
                 color="primary"
                 onClick={() => applyPlan(0)}
+                disabled={!enableFree} 
               >
-                Get Started for Free
+                {enableFree ? "Get Started for Free" : "You have used free tier"}
               </Button>
             </CardContent>
           </Card>
@@ -1174,24 +1856,26 @@ const Subscription = () => {
                 Scale Your Application
               </Typography>
               <Typography variant="h6" color="success.main" gutterBottom>
-                ₹15
+                ₹5
               </Typography>
-              <Box sx={{
-                display:'flex',
-                justifyContent:'center'
-             }}>
-             <ul style={{ listStyle: "none", padding: 0, margin: "10px 0" ,textAlign:'left'}}>
-                <li>✅ Start building</li>
-                <li>✅ No payment required</li>
-                <li>✅ Free API key</li>
-                <li>✅ 15 API calls</li>
-              </ul>
-             </Box>
-             
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <ul style={{ listStyle: "none", padding: 0, margin: "10px 0", textAlign: "left" }}>
+                  <li>✅ Start building</li>
+                  <li>✅ No payment required</li>
+                  <li>✅ Free API key</li>
+                  <li>✅ 10 API calls</li>
+                </ul>
+              </Box>
+
               <Button
                 variant="contained"
                 color="primary"
-                onClick={() => applyPlan(150)}
+                onClick={() => applyPlan(2)}
               >
                 Upgrade to Standard
               </Button>
@@ -1218,23 +1902,25 @@ const Subscription = () => {
                 Unlock advanced features
               </Typography>
               <Typography variant="h6" color="success.main" gutterBottom>
-                ₹50
+                ₹10
               </Typography>
-              <Box sx={{
-                display:'flex',
-                justifyContent:'center'
-             }}>
-             <ul style={{ listStyle: "none", padding: 0, margin: "10px 0" ,textAlign:'left'}}>
-                <li>✅ Start building</li>
-                <li>✅ No payment required</li>
-                <li>✅ Free API key</li>
-                <li>✅ 15 API calls</li>
-              </ul>
-             </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <ul style={{ listStyle: "none", padding: 0, margin: "10px 0", textAlign: "left" }}>
+                  <li>✅ Start building</li>
+                  <li>✅ No payment required</li>
+                  <li>✅ Free API key</li>
+                  <li>✅ 15 API calls</li>
+                </ul>
+              </Box>
               <Button
                 variant="contained"
                 color="primary"
-                onClick={() => applyPlan(500)}
+                onClick={() => applyPlan(10)}
               >
                 Go Professional
               </Button>
