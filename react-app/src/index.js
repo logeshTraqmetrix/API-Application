@@ -92,7 +92,6 @@ const router = createHashRouter(
         <Route path="stockdata" element={<StocksData />} />
         <Route path="apikey" element={<ApiKey />} />
         <Route path="account" element={<LoginDetails />} />
-        <Route path="about" element={<About />} />
       </Route>
       
       <Route path='*' element={<Notfound />} />
