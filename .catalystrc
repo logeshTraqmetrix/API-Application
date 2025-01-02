@@ -10,17 +10,17 @@
   "projects": [
     {
       "idx": 1,
-      "id": "24836000000009001",
-      "name": "API-Application",
+      "id": "19485000000087069",
+      "name": "API-Outlet",
       "domain": {
         "id": "10092482181",
-        "name": "api-application-872720375.development"
+        "name": "api-outlet-849085046.development"
       },
-      "timezone": "America/Los_Angeles",
+      "timezone": "Asia/Kolkata",
       "env": [
         {
           "idx": 1,
-          "id": "872720375",
+          "id": "849085046",
           "name": "Development",
           "type": 3
         }

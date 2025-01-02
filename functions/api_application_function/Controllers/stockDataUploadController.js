@@ -1,6 +1,6 @@
 const csvParser = require('csv-parser');
 const fs = require('fs');
-const StocksTable = process.env.StocksTable || "24836000000013607"
+const StocksTable = process.env.StocksTable || "19485000000094803"
 const catalyst = require('zcatalyst-sdk-node')
 
 

@@ -12,4 +12,9 @@ const userDetails = async (req, res) => {
     });
 }
 
-module.exports = userDetails
+
+
+
+
+
+module.exports = { userDetails }

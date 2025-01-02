@@ -1,7 +1,7 @@
 const catalyst = require('zcatalyst-sdk-node');
 const CryptoJS = require('crypto-js');
 const PLANVALUE = require('../Config/planValues');
-const ApiDetailsTable = process.env.ApiDetailsTable || "24836000000009058";
+const ApiDetailsTable = process.env.ApiDetailsTable || "19485000000097525";
 
 const UserApiData = async (req, res) => {
     const randomApiKey = CryptoJS.lib.WordArray.random(27).toString(CryptoJS.enc.Hex);

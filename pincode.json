@@ -1,0 +1,723 @@
+[
+    {
+      "officeName": "Anna Road H.O",
+      "pincode": 600002,
+      "taluk": "Chennai",
+      "districtName": "Chennai",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Agaram B.O",
+      "pincode": 632506,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Alapakkam B.O",
+      "pincode": 632508,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Anandhalai B.O",
+      "pincode": 632513,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Asamandhur B.O",
+      "pincode": 632502,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Ayal B.O",
+      "pincode": 632505,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Durgam B.O",
+      "pincode": 632512,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Guruvarajpet S.O",
+      "pincode": 631101,
+      "taluk": "Arakonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Jagirthandalam B.O",
+      "pincode": 631052,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Jagirvalavanur B.O",
+      "pincode": 632511,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Jambukulam B.O",
+      "pincode": 631102,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Jawaharpuram B.O",
+      "pincode": 632503,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Karikkal B.O",
+      "pincode": 631102,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Karnambut B.O",
+      "pincode": 632519,
+      "taluk": "NA",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Karnavur B.O",
+      "pincode": 631052,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Kaveripak S.O",
+      "pincode": 632508,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Kodakkal B.O",
+      "pincode": 631102,
+      "taluk": "Wallajah",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Ladavaram B.O",
+      "pincode": 632503,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Marudhalam B.O",
+      "pincode": 632501,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Melapulam B.O",
+      "pincode": 631052,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Melkalathur B.O",
+      "pincode": 632502,
+      "taluk": "Arakonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Mosur B.O",
+      "pincode": 631004,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Mullandrum B.O",
+      "pincode": 632512,
+      "taluk": "Arni",
+      "districtName": "Tiruvannamalai",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Natteri B.O",
+      "pincode": 632511,
+      "taluk": "Cheyyar",
+      "districtName": "Tiruvannamalai",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Pagaveli B.O",
+      "pincode": 632508,
+      "taluk": "Wallajah",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Perumbulipakkam B.O",
+      "pincode": 632531,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Poosimalaikuppam B.O",
+      "pincode": 632512,
+      "taluk": "Arni",
+      "districtName": "Tiruvannamalai",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Puliyamangalam B.O",
+      "pincode": 631004,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Punganur B.O",
+      "pincode": 632507,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Sirukarumbur B.O",
+      "pincode": 632531,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Vanapadi B.O",
+      "pincode": 632404,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Varagur B.O",
+      "pincode": 632507,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Venkatapuram B.O",
+      "pincode": 632507,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Winterpet S.O",
+      "pincode": 631005,
+      "taluk": "Arakonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Ammundi B.O",
+      "pincode": 632519,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Anaipakkam B.O",
+      "pincode": 631003,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Ashoknagar S.O (Vellore)",
+      "pincode": 631001,
+      "taluk": "Arakonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Brammadesam B.O",
+      "pincode": 632511,
+      "taluk": "Cheyyar",
+      "districtName": "Tiruvannamalai",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Chennasamudram B.O",
+      "pincode": 632506,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Damarapakkam S.O",
+      "pincode": 632504,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Ekambaranallur B.O",
+      "pincode": 632405,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Ekhunagar S.O",
+      "pincode": 631004,
+      "taluk": "Arakonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Kalavai S.O",
+      "pincode": 632506,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Kilandurai B.O",
+      "pincode": 631002,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Kilveeranam B.O",
+      "pincode": 632505,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Kuppireddithangal B.O",
+      "pincode": 632516,
+      "taluk": "Katpadi",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Melpadi S.O",
+      "pincode": 632520,
+      "taluk": "Katpadi",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Mudur B.O",
+      "pincode": 631003,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Palayanur B.O",
+      "pincode": 632512,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Panaiyur B.O",
+      "pincode": 632518,
+      "taluk": "Arakonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Periasengadu B.O",
+      "pincode": 632501,
+      "taluk": "Wallajah",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Ranipet Bazar S.O",
+      "pincode": 632401,
+      "taluk": "Walaja",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Sayanavaram B.O",
+      "pincode": 631051,
+      "taluk": "Arakonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Sumaithangi B.O",
+      "pincode": 632508,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Tajpura B.O",
+      "pincode": 632521,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Tempalle B.O",
+      "pincode": 632515,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Thalangai B.O",
+      "pincode": 632501,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Thathireddipalle B.O",
+      "pincode": 632516,
+      "taluk": "Katpadi",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Thuraiperumbakkam B.O",
+      "pincode": 632508,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Timiri S.O",
+      "pincode": 632512,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Velur- Kalavai B.O",
+      "pincode": 632506,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Vennampalle S.O",
+      "pincode": 632516,
+      "taluk": "Katpadi",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Ammanur B.O",
+      "pincode": 631002,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Attupakkam B.O",
+      "pincode": 631051,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Ayarpadi B.O",
+      "pincode": 632531,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Esayanur B.O",
+      "pincode": 632511,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Kavanur B.O",
+      "pincode": 631004,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Keerasathu B.O",
+      "pincode": 632514,
+      "taluk": "Katpadi",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Kesavanankuppam B.O",
+      "pincode": 631102,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Manthangal B.O",
+      "pincode": 632404,
+      "taluk": "Wallajah",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Minnal S.O",
+      "pincode": 632510,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Nandiveduthangal B.O",
+      "pincode": 631101,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Neelakandarayanpattai B.O",
+      "pincode": 632501,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Palayamangadu B.O",
+      "pincode": 632503,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Paranji B.O",
+      "pincode": 632510,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Perungalathur B.O",
+      "pincode": 631003,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Peruvalayam B.O",
+      "pincode": 631052,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Rendadi B.O",
+      "pincode": 631102,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Rottukadai B.O",
+      "pincode": 632508,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Sembarayanallur B.O",
+      "pincode": 632519,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Somasamudram B.O",
+      "pincode": 631102,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Thoppukhana S.O",
+      "pincode": 632503,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Tiruvalam S.O",
+      "pincode": 632515,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Uppupettai B.O",
+      "pincode": 632521,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Uriyur B.O",
+      "pincode": 631151,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Valayathur B.O",
+      "pincode": 632504,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Valluvambakkam B.O",
+      "pincode": 632513,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Vangupattu B.O",
+      "pincode": 631102,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Vembi B.O",
+      "pincode": 632518,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Akkachikuppam B.O",
+      "pincode": 632510,
+      "taluk": "Arakkonam",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Ammoor S.O",
+      "pincode": 632501,
+      "taluk": "Wallajah",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Anaimallur B.O",
+      "pincode": 632507,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Ayilam B.O",
+      "pincode": 632509,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Eranthangal B.O",
+      "pincode": 632519,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Federation Buildings B.O",
+      "pincode": 632509,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Gugainallore B.O",
+      "pincode": 632515,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Gundaleri B.O",
+      "pincode": 632512,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Hakeemnagar S.O",
+      "pincode": 632509,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Kadaperi B.O",
+      "pincode": 632508,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Kalmelkuppam B.O",
+      "pincode": 632501,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Kaniyanur B.O",
+      "pincode": 632506,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Karikkanthangal B.O",
+      "pincode": 632506,
+      "taluk": "Arcot",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    },
+    {
+      "officeName": "Katrambakkam B.O",
+      "pincode": 632501,
+      "taluk": "Walajapet",
+      "districtName": "Vellore",
+      "stateName": "TAMIL NADU"
+    }
+  ]

@@ -5,10 +5,10 @@
     "title": "Stock Data API",
     "description": "API to fetch stock data with various flexible parameter inputs and advanced filtering."
   },
-  "host": "api-application-872720375.development.catalystserverless.com",
+  "host": "localhost:3000",
   "basePath": "/server/api_application_function/api/v1",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/stockdata": {

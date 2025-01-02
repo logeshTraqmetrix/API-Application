@@ -16,7 +16,7 @@ export const MyProvider = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Get user details
+        // Get user details   
         const userResponse = await axios.get('/server/api_application_function/getuserdetails');
         const userData = userResponse.data;
 

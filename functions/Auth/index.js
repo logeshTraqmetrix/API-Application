@@ -6,7 +6,7 @@ module.exports = (context, basicIO) => {
   const requestDetails = catalystApp.userManagement().getSignupValidationRequest(basicIO);
 
   if (requestDetails) {
-    if (requestDetails.user_details.email_id.includes("@zohotest.com")) {
+    // if (requestDetails.user_details.email_id.includes("@zohotest.com")) {
       
       basicIO.write(
         JSON.stringify({
@@ -20,15 +20,15 @@ module.exports = (context, basicIO) => {
           },
         })
       );
-    } else {
-      basicIO.write(
-        JSON.stringify({
-          status: "failure",
-          requestDetails:requestDetails,
-          context:context
-        })
-      );
-    }
+    // } else {
+    //   basicIO.write(
+    //     JSON.stringify({
+    //       status: "failure",
+    //       requestDetails:requestDetails,
+    //       context:context
+    //     })
+    //   );
+    // }
   }
   context.close();
 };

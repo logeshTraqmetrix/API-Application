@@ -1,5 +1,5 @@
 const catalyst = require('zcatalyst-sdk-node');
-const ApiDetailsTable = process.env.ApiDetailsTable || "24836000000009058";
+const ApiDetailsTable = process.env.ApiDetailsTable || "19485000000097525";
 const getMyPagedRows = require('./getAllRecords');
 
 const AdminData = async (req, res) => {
